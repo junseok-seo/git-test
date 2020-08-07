@@ -1,0 +1,46 @@
+/* ------------------- Fixed Btn ------------- */
+.fixed_btn {
+  position: sticky;
+  display: flex;
+  bottom: 15px;
+  right: 15px;
+  margin-left: 83%;
+  z-index: 999;
+}
+.fixed_btn div {
+  border-bottom: #808080;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+.dark_mode_btn {
+  width: 120px;
+  height: 45px;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.dark_mode_btn:hover {
+  background-color: #404040;
+}
+.dark_mode_btn:hover span {
+  color: #fff;
+}
+.dark_mode_btn:hover i {
+  color: #fbe303;
+}
+.go_to_home_btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.go_to_home_btn:hover {
+  background-color: #00d24f;
+}
+.go_to_home_btn:hover i {
+  color: #fff;
+}
