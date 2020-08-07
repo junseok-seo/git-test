@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+</html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>내이버</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="naver.css"
+  />
+  <link rel="stylesheet" href="./webfont.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .float-left {
+      float: left;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+    <div id = "center-align"> <!--가운데 정렬용 div-->
+      <div id="header-top">
+        <span>네이버를 시작페이지로</span>
+        <span>쥬니어네이버</span>
+        <span>해피빈</span>
+      </div>
+      <div id="header-search">
+        <a href="https://www.naver.com">
+              <h1>
+                <span>네이버</span>
+              </h1>
+        </a>
+        <h2 class="blind">검색창</h2>
+        <form class="inline-block" action="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=">
+    <fieldset>
+      <legend class="blind">검색</legend>
+      <input />
+      <span id="search-keybord"></span>
+      <span id="search-history"></span>
+      <button type="submit">
+      <span class="blind">검색</span>
+      <span id="search-image"></span>
+    </button>
+    </fieldset>
+  </form>
+  </div>
+  </div>
+</header>
+<!--여기까지 일단 완성하자-->
+<nav>
+  <div class="center-align relative">
+    <div id="search-ranking">
+      <h2 class="blind">실시간 검색어</h2>
+      <div>
+        <span id="rank-number">1</span>
+        <span id="rank-title">이현종전역한지 벌써3년</span>
+      </div>
+      <ul>
+        <li>
+          <span id="rank-number">1</span>
+          <span id="rank-title">이현종전역한지 벌써3년</span>
+        </li>
+        <li>
+          <span id="rank-number">2</span>
+          <span id="rank-title">오모가리 찌개</span>
+        </li>
+        <li>
+          <span id="rank-number">3</span>
+          <span id="rank-title">누구보다 빠르게</span>
+        </li>
+        <li>
+          <span id="rank-number">4</span>
+          <span id="rank-title">남들과는 다르게</span>
+        </li>
+        <li>
+          <span id="rank-number">5</span>
+          <span id="rank-title">꽈찌쭈</span>
+        </li>
+        <li>
+          <span id="rank-number">6</span>
+          <span id="rank-title">두유노우싸이</span>
+        </li>
+        <li>
+          <span id="rank-number">7</span>
+          <span id="rank-title">왓츄얼네임?</span>
+        </li>
+        <li>
+          <span id="rank-number">8</span>
+          <span id="rank-title">진심이야?</span>
+        </li>
+        <li>
+          <span id="rank-number">9</span>
+          <span id="rank-title">이현종 탄신일</span>
+        </li>
+        <li>
+          <span id="rank-number">10</span>
+          <span id="rank-title">비좀 그만와라 제발</span>
+        </li>
+      </ul>
+    </div>
+    <ul id ="nav-menu">
+      <li>
+        <a href="">
+          <span class="nav-item-mail"></span>
+          <span class="blind">메일</span>
+        </a>
+      </li>
+      <li><a href=""><span></span><span class="blind">카페</span></a></li> 
+      <li><a href=""><span></span><span class="blind">블로그</span></a></li> 
+      <li><a href=""><span></span><span class="blind">지식인</span></a></li> 
+      <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li> 
+      <li><a href=""><span></span><span class="blind">네이버페이</span></a></li> 
+      <li><a href=""><span></span><span class="blind">네이버TV</span></a></li> 
+      <li><a href=""><span></span><span class="blind">사전</span></a></li> 
+      <li><a href=""><span></span><span class="blind">뉴스</span></a></li> 
+      <li><a href=""><span></span><span class="blind">증권</span></a></li> 
+      <li><a href=""><span></span><span class="blind">부동산</span></a></li> 
+      <li><a href=""><span></span><span class="blind">지도</span></a></li> 
+      <li><a href=""><span></span><span class="blind">영화</span></a></li> 
+      <li><a href=""><span></span><span class="blind">뮤직</span></a></li> 
+      <li><a href=""><span></span><span class="blind">책</span></a></li> 
+      <li><a href=""><span></span><span class="blind">웹툰</span></a></li>
+    </ul>
+    <div class="nav-divider"></div>
+    
+    <a href=""><span></span><span class="nav-more">더보기</span></a></li>
+    
+  </div>
+</nav>
+<!--여기까지가 실시간검색어라인-->
+<main>
+  <div id="main-centered" class="center-align">
+    <div id="main-first-block">
+<section id="main-ad">
+  <h3 class="blind">광고</h3>
+</section>
+<section id="main-login">
+  <h3 class="blind">로그인</h3>
+  <div class="login-wrapper">
+    <span class="login-text">네이버를 더 안전하고 편리하게 이용하세요</span>
+    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+    <span class="blind">NAVER 로그인</span>
+            <span class="login-image"></span>
+          </a>
+    <a class="login-signup" 
+    href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com">
+      회원가입</a>
+  
+  <div class="look-box">
+    <a class="link-look"
+    href= "https://nid.naver.com/user/help.nhn?todo=idinquiry">
+    아이디
+  </a>
+ <a class="link-look"
+  href="https://nid.naver.com/nidreminder.form">
+  비밀번호찾기
+</a>
+</div>
+</div>
+</section>
+</div>
+<!--광고랑 로그인창까지입니다.-->
+<!--메인두번째 블록시작-->
+<div id="main-second-block">
+  <div class="float-left">
+    <section id="main-ytn">
+      <h3>연합뉴스</h3>
+      <ol>
+        <li>속보) 이현종 등장!!</li>
+      </ol>
+      <div class="direct-area">
+        <a href="" class="link-news">네이버 뉴스</a>
+        <a href="" class="link-direct">연예</a>
+        <a href="" class="link-direct">스포츠</a>
+        <a href="" class="link-direct">경제</a>
+      </div>
+    </section>
+    <section id="main-newsstand">
+      <h3>뉴스스탠드</h3>
+      <ul>
+        <li><img src="./과학동아.png" alt="과학동아" /></li>
+        <li><img src="./한국일보.png" alt="한국일보" /></li>
+        <li><img src="./osen.png" alt="osen" /></li>
+        <li><img src="./매일경제.png" alt="매일경제" /></li>
+        <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+        <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+        <li><img src="./과학동아.png" alt="과학동아" /></li>
+        <li><img src="./한국일보.png" alt="한국일보" /></li>
+        <li><img src="./osen.png" alt="osen" /></li>
+        <li><img src="./매일경제.png" alt="매일경제" /></li>
+        <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+        <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+        <li><img src="./과학동아.png" alt="과학동아" /></li>
+        <li><img src="./한국일보.png" alt="한국일보" /></li>
+        <li><img src="./osen.png" alt="osen" /></li>
+        <li><img src="./매일경제.png" alt="매일경제" /></li>
+        <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+        <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+      </ul>
+    </section>
+  </div>
+  <div class="float-left">
+    <section id="main-weather">
+      <h3 class="blind">날씨</h3>
+      <p class="norain">비좀 그만와주세요</p>
+    </section>
+    <section id="main-second-ad">
+      <h3 class="blind">광고</h3>
+    </section>
+  </div>
+</div>
+<!--메인3번째 블록-->
+<div id="main-third-block">
+  <section id="main-category">
+    <h3 class="blind">주제별 보기</h3>
+    <div id="main-category-top">
+      <button id="subject-all">
+        <span class="blind">전체 주제 열기</span>
+        <span></span>
+      </button>
+      <div id="subject-list">
+        <div class="opacity left"></div>
+        <ul>
+          <li>리빙</li>
+          <li>푸드</li>
+          <li>스포츠</li>
+          <li>자동차</li>
+          <li>패션뷰티</li>
+          <li>부모i</li>
+          <li class="highlight">건강</li>
+          <li>웹툰</li>
+          <li>게임</li> 
+          <li>티비</li>
+          <li>TV연예</li>
+          <li>뮤직</li>
+          <li>영화</li>
+          <li>책문화</li>
+        </ul>
+        <div class="opacity right"></div>
+      </div>
+      <button id="subject-prev">
+        <span class="blind">이전 주제</span>
+        <span></span>
+      </button>
+      <button id="subject-next">
+        <span class="blind">다음 주제</span>
+        <span></span>
+      </button>
+    </div>
+    <div class="main-story">
+    <ul class="list_theme">
+      <li class=main-story-item>
+        <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+          <img src="./huyu.png">
+        </a>
+        <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+         <em class="theme_category"> 겨울철 건광관리</em><br>
+         <strong class="title-else">손이시려워 꽁</strong>
+         <p class="desc">와 진짜 죽겠네 이거 실화냐 진짜 아오 당근당근</p>
+         <div class="source-box">
+           <span class="dtae">
+             2일전
+           </span>
+         <span class="source">
+           <span class="source_inner">DANGUN</span>
+         </span>
+         </div>
+        </a>
+      </li>
+      <li class=main-story-item>
+        <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+          <img src="./huyu.png">
+        </a>
+        <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+         <em class="theme_category"> 겨울철 건광관리</em><br>
+         <strong class="title-else">손이시려워 꽁</strong>
+         <p class="desc">와 진짜 죽겠네 이거 실화냐 진짜 아오 당근당근</p>
+         <div class="source-box">
+           <span class="dtae">
+             2일전
+           </span>
+         <span class="source">
+           <span class="source_inner">DANGUN</span>
+         </span>
+         </div>
+        </a>
+      </li>
+      <li class=main-story-item><a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+        <img src="./huyu.png">
+      </a>
+      <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+       <em class="theme_category"> 겨울철 건광관리</em><br>
+       <strong class="title-else">손이시려워 꽁</strong>
+       <p class="desc">와 진짜 죽겠네 이거 실화냐 진짜 아오 당근당근</p>
+       <div class="source-box">
+         <span class="dtae">
+           2일전
+         </span>
+       <span class="source">
+         <span class="source_inner">DANGUN</span>
+       </span>
+       </div>
+      </a></li>
+      <li class=main-story-item><a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+        <img src="./huyu.png">
+      </a>
+      <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+       <em class="theme_category"> 겨울철 건광관리</em><br>
+       <strong class="title-else">손이시려워 꽁</strong>
+       <p class="desc">와 진짜 죽겠네 이거 실화냐 진짜 아오 당근당근</p>
+       <div class="source-box">
+         <span class="dtae">
+           2일전
+         </span>
+       <span class="source">
+         <span class="source_inner">DANGUN</span>
+       </span>
+       </div>
+      </a></li>
+      <li class=main-story-item><a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+        <img src="./huyu.png">
+      </a>
+      <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+       <em class="theme_category"> 겨울철 건광관리</em><br>
+       <strong class="title-else">손이시려워 꽁</strong>
+       <p class="desc">와 진짜 죽겠네 이거 실화냐 진짜 아오 당근당근</p>
+       <div class="source-box">
+         <span class="dtae">
+           2일전
+         </span>
+       <span class="source">
+         <span class="source_inner">DANGUN</span>
+       </span>
+       </div>
+      </a></li>
+      <li class=main-story-item>
+        <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+          <img src="./huyu.png">
+        </a>
+        <a href="http://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EA%B1%B4%EA%B0%95%EA%B4%80%EB%A6%AC%EB%B2%95">
+         <em class="theme_category"> 겨울철 건광관리</em><br>
+         <strong class="title-else">손이시려워 꽁</strong>
+         <p class="desc">와 진짜 죽겠네 이거 실화냐 진짜 아오 당근당근</p>
+         <div class="source-box">
+           <span class="dtae">
+             2일전
+           </span>
+         <span class="source">
+           <span class="source_inner">DANGUN</span>
+         </span>
+         </div>
+        </a>
+      </li>
+      
+    </ul>
+    </div>
+  </section>
+  <section id="main-shopping">
+    <h3 class="blind">쇼핑</h3>
+    <iframe
+      src="https://castbox.shopping.naver.com/shopbox/main.nhn?"
+      width="330"
+      height="884"
+    ></iframe>
+  </section>
+</div>
+<div id="main-fourth-block">
+  <section id="main-event">
+    <h3>이벤트</h3>
+  </section>
+  <section id="main-third-ad">
+    <h3 class="blind">광고</h3>
+    <p class="under-ad"> 광고인데 딱히 쓸사진이 없어 이렇게 글로남깁니다 절대로 이미지 올리기 귀찮아서가 아닙니다</p>
+  </section>
+</div>
+</main>
+<footer>
+  <div class="center-align">
+    <h3 class="blind">네이버 정책이랍니다</h3>
+    <ul class="list_corp">
+     
+      <li class="corp_item">회사소개</li>
+      <li class="corp_item">인재채용</li>
+      <li class="corp_item">제휴제안</li>
+      <li class="corp_item">이용약관</li>
+      <li class="corp_item">개인정보처리방침</li>
+      <li class="corp_item">청소년보호정책</li>
+      <li class="corp_item">네이버 정책</li>
+      <li class="corp_item">고객센터</li>
+      <address class="addr">
+        <a href="https://www.navercorp.com">ⓒ NAVER Corp.</a>
+      </address>
+    </ul>
+    
+  </div>
+</footer>
+  </body>
+</html>
