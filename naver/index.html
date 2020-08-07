@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Naver_clone" content="NAVER_CLONE_VER 1.O" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link href="react_style.css" media="(max-width: 1280px)" rel="stylesheet">
+    <title>INDEX | NAVER CLONE</title>
+  </head>
+  <body class="react_body">
+    <!-- 일반 웹화면 -->
+    <header class="header">
+      <div class="header_container">
+        <div class="logo">
+          <a href="#"><img src="image/logo.png" /></a>
+        </div>
+      <form>
+        <fieldset>
+          <legend class="hidden">검색창</legend>
+          <div class="search_box">
+            <input type="text" tabindex="1" id="search_bar" />
+            <div class="bar">
+              <a href="#"><i class="far fa-keyboard"></i></a>
+              <a href="#"><i class="fas fa-caret-down"></i></a>
+            </div>
+            <button type="submit" tabindex="2" class="search_button">
+              <i class="fas fa-search" id="search_icon"></i>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+      <div class="header_link">
+        <a href="#">네이버를 시작페이지로</a>
+        <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+        <a href="#">쥬니어네이버</a>
+        <a href="#">해피빈</a>
+      </div>
+      <div class="nav_wrapper">
+      <nav class="nav">
+        <div class="nav_list">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fas fa-envelope-open-text" id="list_icon"></i>메일</a
+              >
+            </li>
+            <li><a href="#">카페</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">지식IN</a></li>
+            <li><a href="#">쇼핑</a></li>
+            <li><a href="#">Pay</a></li>
+            <li>
+              <a href="#"><i class="fas fa-play list_play_icon"></i>TV</a>
+            </li>
+            <li><a href="#">사전</a></li>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">증권</a></li>
+            <li><a href="#">부동산</a></li>
+            <li><a href="#">지도</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">뮤직</a></li>
+            <li><a href="#">책</a></li>
+            <li><a href="#">웹툰</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="" class="more" id="list_more_icon"
+                >더보기<i class="fas fa-angle-down"></i
+              ></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="realtime_keyword">
+                <span class="keyword_color">1.</span>
+                <span>삼성, 애플 합병</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section "> <!--메인 섹션1-->
+        <div class="section_item">
+          <img src="image/ad.JPG" id="main_ad" />
+        </div>
+        <div class="section_item section2"> <!--메인 섹션2-->
+          <div class="login_item1">
+            <h6>네이버를 더 안전하고 편리하게 이용하세요.</h6>
+          </div>
+          <div class="login_item2">
+            <a href="#"
+              ><span id="login_naver">NAVER</span> <span>로그인</span></a
+            >
+          </div>
+          <div class="login_item3">
+            <div class="left_items">
+              <i class="fas fa-lock"></i>
+              <a href="#">아이디</a>
+              <a href="#">비밀번호찾기</a>
+            </div>
+            <div class="right_items">
+              <i class="fas fa-user"></i>
+              <a href="#">회원가입</a>
+            </div>
+          </div>
+        </div>
+        <div class="section_item section3_inner_grid"> <!--메인 섹션3-->
+          <div class="section3_item">
+            <div class="realtime_news">
+              <div class="realtime_news_item1">
+                <a href="#" id="realtime_news_link"><span>연합뉴스</span></a>
+                <i class="fas fa-angle-right"></i>
+              </div>
+              <div class="realtime_news_item2">서울 전역 비가 많이와</div>
+              <div class="realtime_news_item3">
+                <a href="#" class="select_category_link" id="realtime_news_category"><span >네이버뉴스</span></h5></a>
+                <a href="#" class="select_category_link"><span>연예</span></a>
+                <a href="#" class="select_category_link"><span>스포츠</span></a>
+                <a href="#" class="select_category_link"><span>경제</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="section3_item"> 
+            <div class="news_stand">
+              <div class="news_stand_item1">
+                <a href="#"><i class="far fa-newspaper"></i> </a>
+                <a href="#">뉴스스탠드</a>
+                <i class="fas fa-angle-right"></i>
+              </div>
+              <div class="news_stand_item2">
+                <a href="#">구독한 언론사</a><i class="fas fa-circle"></i>
+                <a href="#">전체 언론사</a>
+              </div>
+              <div class="news_stand_item3">
+                <a href="#"><i class="fas fa-list"></i></a>
+                <a href="#"id="news_stand_icon"><i class="fas fa-th-large" ></i></a>
+                <a href="#"><i class="fas fa-cog"></i></a>
+              </div>
+            </div>
+            <div class="section3_grid">
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/1.JPG" alt="newspaper1"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/2.JPG" alt="newspaper2"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/3.JPG" alt="newspaper3"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/4.JPG" alt="newspaper4"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/5.JPG" alt="newspaper5"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/6.JPG" alt="newspaper6"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/7.JPG" alt="newspaper7"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/8.JPG" alt="newspaper8"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/9.JPG" alt="newspaper9"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/10.JPG" alt="newspaper10"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/11.JPG" alt="newspaper11"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/12.JPG" alt="newspaper12"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/13.JPG" alt="newspaper13"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/14.JPG" alt="newspaper14"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/15.JPG" alt="newspaper15"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/16.JPG" alt="newspaper16"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/17.JPG" alt="newspaper17"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/18.JPG" alt="newspaper18"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/19.JPG" alt="newspaper19"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/20.JPG" alt="newspaper20"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/21.JPG" alt="newspaper21"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/22.JPG" alt="newspaper22"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/23.JPG" alt="newspaper23"></a></div>
+              <div class="section3_grid_item"><a href="#"><img src="image/newspaper/24.JPG" alt="newspaper24"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="section_item section4_inner_grid"> <!--메인 섹션4-->
+          <div class="section4_item">
+            <div class="live_info">
+              <div class="live_corner">
+                <span>증시</span>
+                <span>코스닥</span>
+                <span>833.76</span>
+                <i class="fas fa-caret-up"></i>
+                <span>12.27 +1.50%</span>
+              </div>
+              <div class="arrows">
+                <div class="arrow_box">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="arrow_box">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="aside_ad">
+              <img src="image/ad_aside.JPG" alt="">
+            </div>
+            <div class="shopping">
+              <div class="shopping_title">
+                <a href="http://">쇼핑</a>
+                <div class="shopping_right_title">
+                  <a href="http://">상품</a>
+                  <a href="http://">쇼핑몰</a>
+                  <a href="http://">MEN</a>
+                </div>
+              </div>
+              <div class="shopping_container1">
+                <div class="shopping_inner_title">
+                  <a href="http://">옥션<i class="fas fa-angle-right"></i></a>
+                  <div class="shopping_title_right_align">
+                    <h5>1/10</h5>
+                    <div class="shopping_arrow_container">
+                      <div class="shopping_arrow_box"><i class="fas fa-angle-left"></i></div>
+                      <div class="shopping_arrow_box"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopping_grid_container">
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping1.JPG" alt="shop_image1">
+                    <div>중독성 장난아냐<br>먹다보니빈봉지!</div></a>
+                  </div>
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping2.JPG" alt="shop_image2">
+                    <div>KF94 50매특가!<br>개당700원 실화냐?</div></a>
+                  </div>
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping3.JPG" alt="shop_image3">
+                    <div>이런건 처음봤어<br>대체뭔데그랴?</div></a>
+                  </div>
+                </div>
+                  <div class="shopping_grid_container">
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping4.JPG" alt="shop_image4">
+                    <div>장마에도귀여운건<br>포기할수없어!</div></a>
+                  </div>
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping5.JPG" alt="shop_image5">
+                    <div>반찬걱정끝났어!<br>초특가로쟁여둬~</div></a>
+                  </div>
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping6.JPG" alt="shop_image6">
+                    <div>어디든잘어울려<br>인기폭발이야!</div></a>
+                  </div>
+                </div>
+                <div class="shopping_inner_info">
+                  <span>SALE</span>
+                  <span>스마일 클럽이라면~최대 30% 중복할인!</span>
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="shopping_container2 division_line">
+                <div class="shopping_inner_title">
+                  <a href="http://">지젤슈즈<i class="fas fa-angle-right"></i></a>
+                  <div class="shopping_title_right_align">
+                    <h5>1/10</h5>
+                    <div class="shopping_arrow_container">
+                      <div class="shopping_arrow_box"><i class="fas fa-angle-left"></i></div>
+                      <div class="shopping_arrow_box"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopping_grid_container">
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping7.JPG" alt="shop_image7">
+                      <div>중독성 장난아냐<br>먹다보니빈봉지!</div></a>
+                  </div>
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping8.JPG" alt="shop_image8">
+                    <div>KF94 50매특가!<br>개당700원 실화냐?</div></a>
+                  </div>
+                  <div class="shopping_grid_item">
+                    <a href="http://"><img src="image/shopping9.JPG" alt="shop_image9">
+                    <div>이런건 처음봤어<br>대체뭔데그랴?</div></a>
+                  </div>
+                  </div>
+                  <div class="shopping_inner_title">
+                    <a href="http://">커먼유니크<i class="fas fa-angle-right"></i></a>
+                    <div class="shopping_title_right_align">
+                      <h5>1/10</h5>
+                      <div class="shopping_arrow_container">
+                        <div class="shopping_arrow_box"><i class="fas fa-angle-left"></i></div>
+                        <div class="shopping_arrow_box"><i class="fas fa-angle-right"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shopping_grid_container">
+                    <div class="shopping_grid_item">
+                      <a href="http://"><img src="image/shopping10.JPG" alt="shop_image10">
+                      <div>중독성 장난아냐<br>먹다보니빈봉지!</div></a>
+                    </div>
+                    <div class="shopping_grid_item">
+                      <a href="http://"><img src="image/shopping11.JPG" alt="shop_image11">
+                      <div>KF94 50매특가!<br>개당700원 실화냐?</div></a>
+                    </div>
+                    <div class="shopping_grid_item">
+                      <a href="http://"><img src="image/shopping12.JPG" alt="shop_image12">
+                      <div>이런건 처음봤어<br>대체뭔데그랴?</div></a>
+                    </div>
+                    </div>
+                    <div class="shopping_inner_title">
+                      <a href="http://">아이스탁몰<i class="fas fa-angle-right"></i></a>
+                      <div class="shopping_title_right_align">
+                        <h5>1/10</h5>
+                        <div class="shopping_arrow_container">
+                          <div class="shopping_arrow_box"><i class="fas fa-angle-left"></i></div>
+                          <div class="shopping_arrow_box"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shopping_grid_container">
+                      <div class="shopping_grid_item">
+                        <a href="http://"><img src="image/shopping13.JPG" alt="shop_image13">
+                        <div>중독성 장난아냐<br>먹다보니빈봉지!</div></a>
+                      </div>
+                      <div class="shopping_grid_item">
+                       <a href="http://"><img src="image/shopping14.JPG" alt="shop_image14">
+                        <div>KF94 50매특가!<br>개당700원 실화냐?</div></a>
+                      </div>
+                      <div class="shopping_grid_item">
+                      <a href="http://"><img src="image/shopping15.JPG" alt="shop_image15">
+                    <div>이런건 처음봤어<br>대체뭔데그랴?</div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shopping_news"></div>
+          </div>
+        </div>
+        <div class="section_item"> <!--메인 섹션5-->
+          <div class="light_reading">
+            <div class="light_reading_title">
+              <div class="left_title">
+                <span>오늘 읽을만한 글</span>
+                <span>주제별로 분류된 다양한 글 모음</span>
+              </div>
+              <div class="right_title">
+                <span>2,165 개의 글</span>
+                  <i class="fas fa-cog"></i>
+                  <span>관심주제</span>
+                </div>
+              </div>
+            <div class="light_reading_menu">
+              <div class="menu_grid_item"><a href="#">엔터</a></div>
+              <div class="menu_grid_item"><a href="#">스포츠</a></div>
+              <div class="menu_grid_item"><a href="#">자동차</a></div>
+              <div class="menu_grid_item"><a href="#">웹툰</a></div>
+              <div class="menu_grid_item"><a href="#">경제M</a></div>
+              <div class="menu_grid_item"><a href="#">푸드</a></div>
+              <div class="menu_grid_item"><a href="#">게임</a></div>
+              <div class="menu_grid_item"><a href="#">영화</a></div>
+              <div class="arrow_circle left_icon_align"><i class="fas fa-angle-left"></i></div>
+              <div class="arrow_circle right_icon_align"><i class="fas fa-angle-right"></i></div>
+            </div>
+            <div class="light_reading_main">
+              <div class="reading_main_container">
+                <div class="main_column"><a href="#"><img src="image/video1.JPG" alt="video_1"></a>
+                  <p>[푸드클래스] 쏭아지메의 프랑스 가정식<br>
+                  프랑스 스타일 계란찜 브런치, 달걀 반숙 '꼬꼬뜨'<br>
+                  빵에 콕 찍어 먹으면 엄지 척!<br>
+                  근사하면서 든든함을 채우기 손색없어요<br>
+                  #달걀요리 #프랑스가정식</div></p>
+                <div class="main_column"><a href="#"><img src="image/video2.JPG" alt="video_2"></a>
+                <p>[PICK 오늘 뭐 먹지?] 김상궁의 수랏간<br>
+                  전문점처럼 근사한 연어 초밥 만들기<br>
+                  다시마로 연어를 감싸 숙성시키는 방법으로 <br>
+                  연어의 맛을 제대로 느낄 수 있어요!<br>
+                  #단촛물 #연어레시피</p>
+                </div>
+              </div>
+            </div>
+            <div class="light_reading_article">
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article9.JPG" alt="article1"></a>
+                </div>
+                <div class="article_text">
+                  <a href="#"><span>우리 집 장바구니 공개 🛒<br></span>
+                  <span>부지런하게 담은 코스트코 식재료<br></span>
+                  안녕하세요세연하다 입니다. 7월의 첫번째 코스트코 장바구니 가져왔어요!​거진 오픈시간<br>
+                  비슷하게 갔는데이미 주차장 만차....​다들 부지런하게 장보러 다니시나봐요ㅠㅠ저희는... <br>
+                  3주일 전 · 세연하다</a>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article3.JPG" alt="article2"></a>
+                </div>
+                <div class="article_text">
+                  <a href="#"><span>오늘 뭐 먹지? 🍳<br></span>
+                  <span>워킹맘이 준비한 식단 모음<br></span>
+                  ​​​21끼 주간밥상 벌써 이번에 세 번째.. 아이 개학 전까지 열심히 밥 차려 주는 거 기록으로<br> 남기려
+                  시작한 건데 다음 주 개학을 한다 해도 일주일에 한 번 등교하고 급식을 하지 않..<br>
+                  1개월 전 · 쵭</a>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article4.JPG" alt="article3"></a></div>
+                  <div class="article_text">
+                    <a href="#"><span>오늘 뭐 먹지? 🍳<br></span>
+                    <span>식감까지 챙긴 보양식<br></span>
+                    간편하고 쉽게 만드는 콩나물찜 ​​​재료 콩나물, 고춧가루 2 큰 술, 다진 마늘 1 큰 술, 대파<br>
+                    1/2개, 간장 1 큰 술, 참기름 1 큰 술, (밥 수저 계량)1 , 콩나물을 깨끗하게 씻은 후에..<br> 
+                    1개월 · 전샤인</a>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article10.JPG" alt="article4"></a>
+                </div>
+                <div class="article_text">
+                  <a href="#"><span>우리 집 장바구니 공개 🛒<br></span>
+                  <span>아이스크림부터 채소까지 다양하게<br></span>
+                  ​​​지난 금요일​평일에 혼자 장보러 다녀온 날​역사적인 날​등원한 로디가 걱정되서 아무것도<br>
+                  못할줄 알았는데​마음이 크게 불편하지 않았다​로디도 일곱살이 되어나와 한 약속을 잘 지켜..<br>
+                  4주일 · 전남소요</div></a>
+              </div>  
+            </div>
+            <div class="row_array border_top">
+              <div class="column_image_box">
+                <div class="related_video_box">
+                  <a href="#"><img src="image/video3.JPG" alt="video3"></a>
+                </div>
+                <div class="related_text">
+                  <div>영양만점, 양배추 치즈 토스트</div>
+                  <h6>3주일 전 · 음식중독</h6>
+                </div>
+              </div>  
+              <div class="column_image_box">
+                <div class="related_video_box">
+                  <a href="#"><img src="image/video6.JPG" alt="video4"></a>
+                </div>
+                <div class="related_text"> 
+                  <div> 비주얼에 군침이 팡!</div>
+                  <h6>1주일 전 · 사계절밥상</h6>
+                </div>
+              </div>
+              <div class="column_image_box">
+                <div class="related_video_box">
+                  <a href="#"><img src="image/video5.JPG" alt="video5"></a>
+                </div>
+                <div class="related_text"> 
+                  <div>국물이 진한 콩국수 만드는 법</div>
+                  <h6>1개월 전 · 음식중독</h6>
+                </div>
+              </div>
+            </div>
+            <div class="best_article">
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article11.JPG" alt="article5"></a>
+                </div>
+                <div class="article_text">
+                  <a href="#"><span>오늘 뭐 먹지? 🍳<br></span>
+                  <span>워킹맘이 준비한 식단 모음<br></span>
+                  ​​​21끼 주간밥상 벌써 이번에 세 번째.. 아이 개학 전까지 열심히 밥 차려 주는 거 기록으로<br> 남기려
+                  시작한 건데 다음 주 개학을 한다 해도 일주일에 한 번 등교하고 급식을 하지 않..<br>
+                  1개월 전 · 쵭</a>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article12.JPG" alt="article6"></a>
+                </div>
+                <div class="article_text">
+                  <a href="#"><span>오늘 뭐 먹지? 🍳<br></span>
+                  <span>워킹맘이 준비한 식단 모음<br></span>
+                  ​​​21끼 주간밥상 벌써 이번에 세 번째.. 아이 개학 전까지 열심히 밥 차려 주는 거 기록으로<br> 남기려
+                  시작한 건데 다음 주 개학을 한다 해도 일주일에 한 번 등교하고 급식을 하지 않..<br>
+                  1개월 전 · 쵭</a>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article7.JPG" alt="article7"></a></div>
+                  <div class="article_text">
+                    <a href="#"><span>오늘 뭐 먹지? 🍳<br></span>
+                    <span>식감까지 챙긴 보양식<br></span>
+                    간편하고 쉽게 만드는 콩나물찜 ​​​재료 콩나물, 고춧가루 2 큰 술, 다진 마늘 1 큰 술, 대파<br>
+                    1/2개, 간장 1 큰 술, 참기름 1 큰 술, (밥 수저 계량)1 , 콩나물을 깨끗하게 씻은 후에..<br> 
+                    1개월 · 전샤인</a>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <a href="#"><img src="image/article6.JPG" alt="article8"></a>
+                </div>
+                <div class="article_text">
+                  <a href="#"><span>우리 집 장바구니 공개 🛒<br></span>
+                  <span>아이스크림부터 채소까지 다양하게<br></span>
+                  ​​​지난 금요일​평일에 혼자 장보러 다녀온 날​역사적인 날​등원한 로디가 걱정되서 아무것도<br>
+                  못할줄 알았는데​마음이 크게 불편하지 않았다​로디도 일곱살이 되어나와 한 약속을 잘 지켜..<br>
+                  4주일 · 전남소요</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section_item"><!--메인섹션 6-->
+          <div class="funding">
+            <div class="fund_link">
+              <a href="#">마음까지 채우는 클릭 
+                <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="row_array">
+              <div class="column_image_box">
+                <img src="image/fund1.JPG" alt="fund_image1">
+                <div class="fund_text_box">
+                  <a href="#">나의 독서능력은 어느정도 일까? <br>최필승
+                  전문가와 함께하는 책 선물</a>
+                  <h6>책구루 X 최승필·131% 달성</h6>
+                </div>
+              </div>
+              <div class="column_image_box">
+                <img src="image/fund2.JPG" alt="fund_image2">
+                <div class="fund_text_box">
+                  <a href="#">피부를 식혀주는 여름 꿀잠템, 쪽빛 <br>인견 이불</a>
+                  <h6>킨디고·145% 달성</h6>
+                </div>
+              </div>
+              <div class="column_image_box">
+                <img src="image/fund3.png" alt="fund_image3">
+                <div class="fund_text_box">차홍 원장이 추천해요! 아이들과 응원<br>
+                  하는 '착한 핸드크림'<a href="#"></a>
+                  <h6>차홍코스메틱 · 181% 달성</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more_reading">
+            <div class="more_button">
+              <i class="fas fa-plus"></i>
+            <div class="more_link"><a href="http://">새로운 글 더보기</a></div>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </main>
+    <footer class="footer ">
+      <div class="foot_container">
+        <div class="foot_width foot_card ">
+          <div class="foot_card_container">
+            <div class="foot_card_img">
+              <img src="image/footer1.JPG" alt="foot_image1">
+            </div>
+            <div class="foot_text">
+              <a href="3">
+                <span>해외취업 화상면접 주간</span>
+                <h5>해외 취업은 KOTRA!</h5>
+                <p>해외 인사 담당자를<br>온라인으로 만나보세요!</p>
+              </a>
+            </div>
+          </div>
+          <div class="foot_card_container">
+            <img src="image/footer2.JPG" alt="foot_image2">
+            <div class="foot_text">
+              <a href="3">
+                <span>네이버 해피빈 펀딩</span>
+                <h5>눙눙이와 친구들</h5>
+                <p>환경의 소중함을<br>알리기 위해 태어났어요</p>
+              </a>
+            </div>
+          </div>
+          <div class="foot_card_container">
+            <img src="image/footer3.JPG" alt="foot_image3">
+            <div class="foot_text">
+              <a href="3">
+                <span>스타책방X해피빈</span>
+                <h5>서영희의 스타책방</h5>
+                <p>듣기만 해도 기부되는<br>따뜻한 오디오클립 동화</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="foot_item foot_notice">
+          <a href="#">공지사항</a>
+          <div class="notice_item">
+            <a href="#" id="notice_link_color">네이버 DB점검으로 인한 서비스 중단 안내</a>
+          </div>
+          <div class="notice_item">
+            <a href="#">서비스 전체보기 <i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="foot_width foot_company">
+          <div class="left_align">
+            <div class="company_item">
+              <a href="http://">Creators</a>
+              <span>크리에이터</span>
+              <span>스몰 비즈니스</span>
+            </div>
+            <div class="company_item">
+              <a href="http://">Partners</a>
+              <span>비즈니스·광고</span>
+              <span>스토어 개설</span>
+              <span>지역업체 등록</span>
+            </div>
+            <div class="company_item">
+              <a href="http://">Developers</a>
+              <span>네이버 개발자 센터</span>
+              <span>오픈 API</span>
+              <span>오픈 소스</span>
+              <span>네이버 D2</span>
+              <span>네이버 D2SF</span>
+              <span>네이버 랩스</span>
+            </div>
+          </div>
+          <div class="right_align">
+            <div class="service_link">
+              <div class="sevice_text"></div>
+              <img src="" alt="">
+            </div>
+            <div class="service_link">
+              <div class="sevice_text"></div>
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="foot_width foot_info">
+          <ul class="foot_info_container">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">제휴제안</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li id="emphasize1"><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">청소년보호정책</a></li>
+            <li><a href="#">네이버 정책</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li id="emphasize2"><a href="#">ⓒNAVER Corp.</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+        <!--반응형 html-->
+        <div class="all_react_layer">
+          <div class="react_layer_item">
+            <header class="react_header">
+              <nav class="react_header_grid_item">
+                  <a href="http://"><i class="fas fa-bars"></i></a>
+                  <a href="http://"><i class="fas fa-inbox"></i></a>
+              </nav>
+              <div class="react_header_grid_item">
+                <a href="http://">NAVER</a>
+              </div>
+              <!-- 검색창 -->
+              <form class="react_header_grid_item"> 
+                <fieldset>
+                  <legend class="hidden">검색창</legend>
+                  <div >
+                    <input type="text" tabindex="1" id="react_search_bar" />
+                    <div class="react_bar">
+                      <a href="#"><i class="fas fa-microphone"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                    <button type="submit" tabindex="2" class="react_search_button"></button>
+                </div>
+                </fieldset>
+              </form>
+            </header>
+        </div>
+        <div class="react_layer_item">
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="news_pan"></a></div>
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="search_chart"></a></div>
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="gossip"></a></div>
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="trend_pan"></a></div>
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="mail"></a></div>
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="cafe"></a></div>
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="blog"></a></div>
+            <div class="icon_wrapper"><a href="http://"><img src="" alt="more"></a></div>
+        </div>
+        <div class="react_layer_item">
+            <div class="react_main_grid_item"> <!--메인 섹션1 광고1-->
+              <img src="image/re_main_ad2.JPG" alt="main_head_ad1">
+            </div>
+            <div class="react_main_grid_item"> <!--메인 섹션2-->
+              <img src="image/re_main_1.JPG" alt="">
+            </div>
+            <div class="react_main_grid_item"> <!--메인 섹션3-->
+              <div class="weather_title ">
+                <span>날씨</span>
+                <a href="http://">내위치찾기 <i class="fas fa-street-view"></i></a>
+                <a href="http://"><i class="fas fa-chevron-up "></i></a>
+              </div>
+              <div class="weather_content"> 
+              위치찾기를 눌러 현 위치의 시간대별·주간<br>
+              날씨와 미세먼지 예보를 여기에서 바로 보세요
+            </div>
+            </div>  
+            <!--메인 섹션4-->
+            <div class="react_main_grid_item"> 
+              <div class="row_align">
+                <img src="" alt="app_logo">
+              앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해 보세요
+              <div class="app_link_box">앱 사용하기</div>
+              </div>
+            </div>
+            <!--메인 섹션5-->
+            <div class="react_main_grid_item">
+              <div class="row_align">
+               <span>증권</span> 
+              <a href="http://"><i class="fas fa-chevron-down"></i></a>
+              </div>
+            </div>
+            <!--메인 섹션6-->
+            <div class="react_main_grid_item">
+              <div class="row_align">
+                <span>웹툰</span>  
+                <a href="http://"><i class="fas fa-chevron-down"></i></a>
+              </div>
+            </div>
+            <!--메인 섹션7-->
+            <div class="react_main_grid_item">
+              <img src="image/re_main_ad.JPG" alt="main_ad2">
+            </div>
+            <!--메인 섹션8-->
+            <div class="react_main_grid_item">
+              <div class="column_align">
+                <div class="row_align">인기주제 판을 확인해 보세요! <a href="http://">판관리</a></div>
+                <div class="pan_grid_container">
+                  <div class="pan row_align">뿜판 <a href="http://"><i class="fas fa-angle-right"></i></a></div>
+                <div class="pan row_align">웹툰판 <a href="http://"><i class="fas fa-angle-right"></i></a></div>
+                <div class="pan row_align">자동차판 <a href="http://"><i class="fas fa-angle-right"></i></a></div>
+                <div class="pan row_align">푸드판 <a href="http://"><i class="fas fa-angle-right"></i></a></div>
+                </div>
+              </div>
+          </div>
+        </main>
+        </div>
+        <footer class="react_layer_item">
+            <div>
+              <a href="#"></a>로그인
+              <a href="#">전체서비스</a>
+              <a href="#">PC버전</a>
+              <p></p>
+              <a href="#">이용약관</a>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">고객센터</a>
+            </div>
+            <div>NAVER</div>
+          </footer>
+        </div>
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+try{
+  var total - maybeExist();
+  if (total ===0 ){
+    throw new Error("Division by Zero")
+  }else{
+    alert(50 /total)
+  }
+}
+catch(e){
+  alert(e.name + ":" + e.message);
+}finally{
+  alert("finally")
+}
