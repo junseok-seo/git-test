@@ -1,0 +1,846 @@
+.main-top {
+    display: flex;
+    position: relative;
+    left: 400px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.main-logo{
+    height: 56px;
+    position: relative;
+    right: 20px;
+}
+
+#search {
+    margin-top: 30px;
+    width: 586px;
+    height: 56px;
+    border: 2px solid #19ce60;
+    outline: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#search-btn {
+    margin-top: 30px;
+    border: none;
+    padding: 0px;
+    position: relative;
+    right: 56px;
+}
+
+.main-option {
+    font-size: 11px;
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: -30px;
+}
+
+.main-option a {
+    text-decoration: none;
+    color: gray;
+}
+
+.option1 a{
+    color: black;
+}
+
+.option1 a:hover {
+    text-decoration: underline;
+}
+
+.option2 {
+    position: relative;
+    left: 10px;
+    top: 15px;
+    font-size: 12px;
+    color: grey;
+}
+
+.option3 {
+    position: relative;
+    left: 20px;
+    top: 15px;
+    font-size: 12px;
+    color: grey;
+}
+
+#starting-btn {
+    border: none;
+    padding: 0px;
+    position: relative;
+    top: 6px;
+}
+
+
+
+
+/* nav */
+
+
+
+
+
+.main-nav-bg{
+    height: 52px;
+    position: relative;
+    top: 40px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+    margin: auto;
+    margin: -10px;
+}
+
+.main-nav {
+    position: relative;
+    margin: auto;
+}
+
+.main-nav a{
+    text-decoration: none;
+        transform: scale(1.2);
+        transition: transform 0.8s, opacity 0.8s;
+}
+
+.nav-green a{
+    color: #03c75a;
+}
+
+.nav-black a{
+    color: black;
+}
+
+
+.main-nav ul {
+    list-style: none;
+}
+
+.nav-green {
+    display: flex;
+    position: relative;
+    left: 350px;
+    top: 17px;
+    right: 0;
+    width: auto;
+}
+.nav-green li {
+    margin: 0px 10px;
+}
+
+
+.nav-black {
+    display: flex;
+    position: relative;
+    left: 750px;
+    top: -26px;
+}
+
+.nav-black li {
+    margin: 0px 10px;
+}
+
+.nav-mail {
+    position: relative;
+    bottom: 7px;
+}
+
+.nav-TV {
+    position: relative;
+    bottom: 7px;
+}
+
+#TV {
+    position: relative;
+    bottom: -4px;
+}
+
+.nav-option {
+    display: flex;
+    position: relative;
+    left: 1300px;
+    bottom: 62px;
+    right: 0;
+}
+
+.nav-option a {
+    color: #505050;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    margin-top: 70px;
+}
+
+.container-left-ad {
+    transform: scale(0.5);
+    margin-top: -88px;
+}
+
+.container-moving-tap {
+    margin-top: -80px;
+    margin-left: 375px;
+    border: 1px solid #dae1e6;
+    background-color: #f7f9fa;
+    width: 750px;
+
+}
+
+.container-moving-tap {
+    font-size: 13px;
+}
+
+.container-moving-tap a {
+    text-decoration: none;
+    color: black;
+}
+
+.cotainer-tap {
+    position: relative;
+    margin-left: 260px;
+    bottom: 10px;
+    font-weight: 600;
+}
+
+.container-tap-text {
+    position: relative;
+    bottom: 10px;
+}
+
+.container-tap-text:hover {
+    text-decoration: underline;
+}
+
+.cotainer-tap a:first-child {
+    color: #3565c9;
+}
+
+.container-news {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 375px;
+}
+
+.container-news a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-news-right {
+    margin-left: 375px;
+}
+
+.container-news-tap {
+    margin-left: 350px;
+    position: relative;
+    top: 10px;
+}
+
+#newsstand {
+    position: relative;
+    top: 7px;;
+}
+
+.jtbc-logo {
+    position: relative;
+    top: -35px;
+    line-height: 0px;
+    left: 7px;
+}
+
+.jtbc-logo img {
+    border: 1px solid #dae1e6;
+    padding: 10px 32px;
+    margin: -2px;
+}
+
+#container-news-down-left-btn {
+    position: relative;
+    z-index: 1;
+    right: 20px;
+    top: 105px;
+}
+
+#container-news-down-right-btn {
+    position: relative;
+    z-index: 1;
+    left: 700px;
+    top: 105px;
+}
+
+.container-left2-top1 {
+    position: relative;
+    top: -20px;
+    left: 600px;
+}
+
+.container-left2-top2 {
+    position: relative;
+    left: 570px;
+    top: -22px;
+}
+
+.card-car {
+    display: flex;
+    position: relative;
+    right: 560px;
+}
+
+.card-car a{
+    display: block;
+    border: 1px solid #dae1e6;
+    font-size: 13px;
+    line-height: 49px;
+    font-weight: 700;
+    padding: 5px 29px;
+}
+
+.card-car a:hover {
+    color: rgb(14, 11, 199);
+}
+
+#container-left2-top2-btn1 {
+    position: relative;
+    right: 585px;
+    top: 48px;
+    z-index: 1;
+}
+
+#container-left2-top2-btn2 {
+    position: relative;
+    left: 127px;
+    top: 48px;
+    z-index: 1;
+}
+
+.car-img li {
+    list-style: none;
+    transform: scale(0.5);
+    position: relative;
+    right: 870px;
+}
+
+.car-main a img {
+    transition: transform 0.2s;
+}
+
+.car-main a img:hover {
+    transform: scale(1.1);
+}
+
+.car-img1 {
+    position: relative;
+    top: -50px;
+}
+
+.car-img2 {
+    position: relative;
+    top: -150px;
+}
+
+.car-img3 {
+    position: relative;
+    top: -250px;
+}
+
+.car-img4 {
+    position: relative;
+    top: -350px;
+}
+
+.car-img5 {
+    position: relative;
+    top: -450px;
+}
+
+.car-info ul li {
+    list-style: none;
+    position: relative;
+    top: -1180px;
+    right: 400px;
+    margin: 20px 0px;
+}
+
+.newcar {
+    position: relative;
+    top: -1200px;
+    border-top: 2px solid #e4e8eb;;
+    border-bottom: 2px solid #e4e8eb;
+    padding-top: 10px;
+    width: 800px;
+    height: 250px;
+}
+
+.newcar img:hover {
+    transform: scale(1.1);
+}
+
+.newcar a:hover{
+    transform: scale(1.1);
+}
+
+.newcar img {
+    transition: transform 0.2s;
+}
+
+.jeep1 {
+    transform: scale(0.5);
+    position: relative;
+    left: -200px;
+}
+.jeep2 {
+    transform: scale(0.5);
+    position: relative;
+    top: -177px;
+}
+.jeep3 {
+    transform: scale(0.5);
+    position: relative;
+    left: 200px;
+    top: -354px;
+}
+.jeep4 {
+    transform: scale(0.5);
+    position: relative;
+    left: 400px;
+    top: -531px;
+}
+
+.jeep1 span {
+    position: relative;
+    top: 80px;
+    left: -300px;
+    font-size: 25px;
+}
+.jeep2 span {
+    position: relative;
+    top: 80px;
+    left: -300px;
+    font-size: 25px;
+}
+
+.jeep3 span {
+    position: relative;
+    top: 80px;
+    left: -300px;
+    font-size: 25px;
+}
+.jeep4 span {
+    position: relative;
+    top: 80px;
+    left: -300px;
+    font-size: 25px;
+}
+
+#car-btn1 {
+    position: relative;
+    top: 130px;
+    left: -100px;
+    z-index: 1;
+}
+
+#car-btn2 {
+    position: relative;
+    top: 130px;
+    z-index: 1;
+    left: 620px;
+}
+
+.red-car-tap {
+    position: relative;
+    top: -1200px;
+    left: -23px;
+}
+
+.red-car-tap li {
+    list-style: none;
+}
+
+.red-car-info {
+    position: relative;
+    top: -1675px;
+    left: 200px;
+}
+
+.red-car-info li {
+    list-style: none;
+    margin: 5px;
+}
+
+.red-car-tap img:hover {
+    transform: scale(1.1);
+}
+
+.red-car-tap img {
+    transition: transform 0.2s;
+}
+
+.video {
+    position: relative;
+    top: -1600px;
+    border-bottom: 2px solid #e4e8eb;
+    border-top: 2px solid #e4e8eb;
+    width: 800px;
+    padding-top: 20px;
+    height: 230px;
+}
+
+.video2 {
+    position: relative;
+    left: 280px;
+    top: -198px;
+}
+
+.video3 {
+    position: relative;
+    left: 560px;
+    top: -396px;
+}
+
+.plus-button {
+    background: url('./imageSet.png') no-repeat 0 -342px;
+    background-size: 440px 410px;
+	width: 42px;
+    height: 42px;
+}
+
+.plus-btn {
+    position: relative;
+    top: -380px;
+    left: 380px;
+}
+
+.plus-new {
+    position: relative;
+    left: -20px;
+    font-size: 13px;
+}
+
+.login-tap {
+    box-sizing: border-box;
+    padding: 5px 16px 12px 17px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    width: 350px;
+    height: 135px;
+    position: relative;
+    top: -4025px;
+    left: 780px;
+    font-size: 12px;
+}
+
+.login-tap p {
+    padding-left: 3px;
+    color: grey;
+    position: relative;
+}
+
+.login img {
+       height: 45px; 
+}
+
+.login-logo {
+    background: url('/css/imageSet.png') no-repeat -408px -55px;
+	background-size: 440px 410px;
+	width: 10px;
+    height: 14px;
+    position: relative;
+    top: 8px;
+}
+
+.login-id {
+    position: relative;
+    top: -4px;
+    left: 13px;
+}
+
+.login-password {
+    position: relative;
+    top: -19px;
+    left: 50px;
+}
+
+.join-logo {
+    background: url('/css/imageSet.png') no-repeat -319px -308px;
+	background-size: 440px 410px;
+	width: 11px;
+    height: 11px;
+    position: relative;
+    top: -33px;
+    left: 240px;
+}
+
+.join {
+    position: relative;
+    top: -45px;
+    left: 260px;
+}
+
+.card-issue {
+    border: 1px solid #dae1e6;
+    height: 47px;
+    position: relative;
+    top: -4010px;
+    width: 350px;
+    left: 780px;
+}
+
+.issue {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 2px;
+    font-size: 13px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+.issue-covid {
+    position: relative;
+    font-size: 13px;
+    color: #404040;
+    left: 30px;
+    top: 15px;
+}
+
+.card-issue-btns {
+    position: relative;
+    top: -4045px;
+    left: 1060px;
+}
+
+.card-issue-btns button {
+    background-color: #ffffff;
+    border: 2px solid #dae1e6;
+}
+
+.card-issue-btn1 {
+    background: url('./imageSet.png') no-repeat -670px -592px;
+	width: 11px;
+    height: 18px;
+}
+
+.card-issue-btn2 {
+    background: url('./imageSet.png') no-repeat -655px -592px;
+	width: 10px;
+	height: 18px;
+}
+
+.ad {
+    width: 350px;
+    position: relative;
+    top: -4020px;
+    left: 780px;
+}
+
+.ad-shopping {
+    position: relative;
+    top: -4000px;
+    left: 785px;
+}
+
+.ad-shopping>a {
+    font-weight: 700;
+}
+
+.ad-shopping-nav {
+    position: relative;
+    left: 200px;
+}
+
+.ad-shopping-nav a:hover{
+    color: #03c75a;
+    border-color: #19ce60;
+    border-bottom: 2px solid #19ce60;;
+}
+
+.ad-menu {
+    margin-top: 10px;
+}
+
+.shopping-btns {
+    margin-top: 10px;
+    margin-left: 250px;
+}
+
+.shopping-btns button {
+    background-color: #ffffff;
+    border: 2px solid #dae1e6;
+}
+
+.shopping-btn1 {
+    background: url('./imageSet.png') no-repeat -670px -592px;
+	width: 11px;
+    height: 18px;
+}
+
+.shopping-btn2 {
+    background: url('./imageSet.png') no-repeat -655px -592px;
+	width: 10px;
+    height: 18px;
+}
+
+.soppings {
+    width: 341px;
+    border-left: 1px solid #e4e8eb;
+    border-top: 1px solid #e4e8eb;
+    height: 1000px;
+}
+
+.shopping-item {
+    border-right: 1px solid #e4e8eb;
+    border-bottom: 1px solid #e4e8eb;
+}
+
+.sopping-news {
+    margin-left: 230px;
+    margin-top: -10px;
+}
+
+#soppingnews {
+    position: relative;
+    top: 13px;
+    left: 10px;
+}
+
+.sopping-news span {
+    position: relative;
+    top: -5px;
+}
+
+.sopping-news button {
+    background-color: #ffffff;
+    border: 2px solid #dae1e6;
+}
+
+.shop {
+    border: 1px solid #dae1e6;
+}
+
+.soppingnews-nav {
+    font-size: 13px;
+}
+
+
+footer {
+    position: relative;
+    top: -3000px;
+    width: 1924px;
+    background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb;
+}
+
+.kotra {
+    width: 170px;
+}
+
+.kotras {
+    display: flex;
+    margin-left: 370px;
+}
+
+.kotra2 {
+    margin-left: 40px;
+}
+
+.kotra3 {
+    margin-left: 40px;
+}
+
+.footer2 {
+    position: relative;
+    left: 370px;
+    top: 30px;
+}
+
+.footer2 a{
+    text-decoration: none;
+}
+
+.footer2 div strong {
+    font-size: 13px;
+    color: black;
+}
+
+.footer2 div span {
+    color: #777777;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.footer2-1 {
+    position: relative;
+    left: 1000px;
+    top: -13px;
+}
+
+.footer3 {
+    margin-left: 370px;
+    margin-top: 70px;
+}
+
+.footer3 a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 13px;
+}
+
+.footer3-2 {
+    margin-top: 7px;
+}
+
+.footer3-3 {
+    margin-top: 10px;
+}
+
+.ser-logo1 {
+    margin-left: 750px;
+    margin-top: -140px;
+}
+
+.ser-logo1 h5 {
+    position: relative;
+    top: 45px;
+    left: -20px;
+}
+
+.ser-logo1 span {
+    position: relative;
+    left: -5px;
+    top: -20px;
+    font-size: 13px;
+    color: #777777;
+}
+
+
+.ser-logo2 {
+    margin-left: 920px;
+    margin-top: -130px;
+    padding-bottom: 30px;
+}
+
+.ser-logo2 h5 {
+    position: relative;
+    top: 45px;
+    left: -20px;
+}
+
+.ser-logo2 span {
+    position: relative;
+    left: -5px;
+    top: -20px;
+    font-size: 13px;
+    color: #777777;
+}
+
+
+.m-top,
+.m-search {
+    display: none;
+}
+
+
+/* .ww {
+    display: none;
+} */

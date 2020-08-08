@@ -1,0 +1,168 @@
+.header {
+  width: 100%;
+}
+
+.header_container {
+  margin: auto;
+  width: 1130px;
+  height: 160px;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  width: 222px;
+  height: 52px;
+  overflow: hidden;
+}
+
+.hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+}
+
+.search_box {
+  width: 585px;
+  height: 56px;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 3px;
+  margin-left: 28px;
+  position: relative;
+}
+
+/* 검색창 */
+#search_bar {
+  flex: 9;
+  height: 56px;
+  width: 585px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 2px solid #03cf5d;
+  font-size: 18px;
+}
+
+.bar {
+  position: absolute;
+  right: 70px;
+}
+
+.bar > a:first-child {
+  opacity: 50%;
+}
+
+.bar > a:last-child {
+  color: #03cf5d;
+}
+
+.search_box > button {
+  flex: 1;
+  height: 56px;
+  width: 56px;
+  padding: 0px;
+  border: none;
+  background-color: #03cf5d;
+  color: #ffffff;
+}
+
+.search_box > button > i {
+  font-size: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+.header_link {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+.header_link > a {
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.header_link > a > i {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.nav_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #f1f3f6;
+  border-bottom: 1px solid #f1f3f6;
+}
+
+.nav {
+  width: 1130px;
+  height: 90px;
+}
+
+.nav_list {
+  width: 1130px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav_list > ul {
+  margin-left: 30px;
+}
+
+.nav_list ul > li {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+#list_icon {
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+.nav_list ul > li:nth-child(-n + 7) > a {
+  color: #03cf5d;
+}
+
+#list_more_icon {
+  color: black;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.nav_list ul > li > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list_play_icon {
+  font-size: 12px;
+}
+
+.nav_list > .more {
+  font-size: 13px;
+}
+
+.more > i {
+  margin-left: 5px;
+}
+
+.realtime_keyword {
+  font-size: 13px;
+}
+
+.nav {
+  width: 1080px;
+  height: 55px;
+}
