@@ -1,0 +1,66 @@
+/* 섹션1_광고 */
+#main_ad {
+  width: 750px;
+  height: 135px;
+  overflow: hidden;
+}
+
+/* 섹션2_로그인 */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.login_item1 {
+  font-size: 12px;
+  opacity: 60%;
+  margin-top: 13px;
+  align-self: start;
+  margin-left: 14px;
+}
+
+.login_item2 {
+  width: 306px;
+  height: 47px;
+  border-radius: 2px;
+  background-color: #19ce60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.login_item2 > a {
+  color: #f9fefb;
+}
+
+#login_naver {
+  font-size: 16px;
+  font-family: arial;
+  font-weight: 800;
+}
+
+.login_item3 {
+  font-size: 10px;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.left_items > i,
+.right_items > i {
+  opacity: 0.3;
+  margin-right: 3px;
+}
+
+.left_items {
+  margin-left: 2px;
+  width: 110px;
+  margin-right: 140px;
+}
+
+.right_items {
+  display: flex;
+}
