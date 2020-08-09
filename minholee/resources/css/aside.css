@@ -1,0 +1,223 @@
+/*Aside*/
+.side_bar {
+  display: grid;
+  top: 50px;
+  grid-template-columns: 350px;
+  gap: 15px;
+}
+
+.account_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  height: 135px;
+  background-color: #f7f9fa;
+  padding: 15px;
+}
+.login_message {
+  color: #808080;
+  font-size: 12px;
+}
+.login_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 315px;
+  height: 48px;
+  color: #fff;
+  background-color: #19ce60;
+  border: 1px solid #15c654;
+  cursor: pointer;
+}
+.login_btn:hover {
+  opacity: 0.9;
+  transform: scale(0.98);
+  transition: 0.2s ease-in-out;
+}
+.login_btn:active {
+  outline: none;
+}
+.login_btn:focus {
+  outline: none;
+}
+.login_options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  cursor: pointer;
+}
+.login_options span:hover {
+  text-decoration: underline;
+}
+.login_options i,
+.login_options .dot {
+  color: #a0a2a6;
+}
+
+.card_news {
+  height: 50px;
+  padding: 15px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.currency {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.currency_info {
+  font-weight: 700;
+}
+.currency span {
+  padding-right: 5px;
+}
+.us {
+  display: flex;
+  align-items: center;
+}
+.us_flag {
+  width: 20px;
+}
+.usd {
+  padding-left: 5px;
+}
+.won {
+  font-weight: 700;
+}
+.point {
+  color: #0287f6;
+}
+
+.side_ad {
+  width: 350px;
+  height: 200px;
+  background-image: url(../images/ad/side_ad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.shop_container {
+  height: 1190px;
+}
+.shop_header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 15px 0;
+}
+.shopping:hover {
+  text-decoration: underline;
+}
+.product {
+  color: #03c75a;
+  border-bottom: 2px solid #03c75a;
+}
+
+.mall_area {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 12px;
+  background-color: #f7f9fa;
+}
+
+.mall_list {
+  display: flex;
+  justify-content: space-between;
+}
+.mall_list:first-child {
+  margin-bottom: 10px;
+}
+.mall_list a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.mall_main {
+  height: 910px;
+  padding: 15px 10px;
+  font-size: 12px;
+}
+
+.main_top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page_number {
+  padding-right: 7px;
+  color: #808080;
+}
+.current_page {
+  font-weight: 700;
+}
+
+.main_grid {
+  display: grid;
+  height: 810px;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px 0;
+}
+
+.goods_area {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+}
+.goods_area:hover img {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.goods_area:hover .goods_title {
+  text-decoration: underline;
+}
+.goods_area img {
+  width: 106px;
+  height: 140px;
+}
+.goods_title {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.goods_title span:first-child {
+  margin-bottom: 6px;
+}
+
+.bottom_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_page .page_number {
+  padding: 0 30px;
+}
+
+.shop_news {
+  padding: 15px 10px;
+}
+.shop_news_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 13px;
+}
+.shop_news_list {
+  font-size: 12px;
+}
+.shop_news_list li span:not(:first-child):hover {
+  text-decoration: underline;
+}
+.shop_news_list li:not(:last-child) {
+  margin-bottom: 9px;
+}
