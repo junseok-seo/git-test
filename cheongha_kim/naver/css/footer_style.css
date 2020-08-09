@@ -1,0 +1,157 @@
+.footer {
+  height: 429px;
+  width: 100%;
+}
+
+.foot_container {
+  margin: auto;
+  width: 1130px;
+  display: flex;
+  flex-direction: column;
+  padding: 25 32;
+}
+
+.foot_width {
+  width: 100%;
+}
+
+/*foot 카드영역*/
+.foot_card {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.foot_card_container {
+  width: 410px;
+  display: flex;
+}
+
+.footer_card_img {
+  overflow: hidden;
+  width: 200px;
+  height: 110px;
+}
+
+.footer_card_img > img {
+  width: 200px;
+  height: 110px;
+}
+
+.foot_card {
+  height: 135px;
+}
+
+.foot_text {
+  font-size: 12px;
+  line-height: 1.2rem;
+  margin-left: 20px;
+}
+
+.foot_text > a > span {
+  color: #7cc464;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.foot_text > a > h5 {
+  font-weight: bold;
+}
+
+.foot_text > a > p {
+  margin-top: 10px;
+}
+
+/*notice 영역*/
+.foot_notice {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+}
+
+.foot_notice > a {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#notice_link_color {
+  color: rgba(128, 128, 128, 0.7);
+  font-size: 14px;
+}
+
+.notice_item:last-child {
+  position: absolute;
+  right: 5px;
+  font-weight: bold;
+}
+
+/*company 영역*/
+.foot_company {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  height: 110px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.company_item {
+  width: 750px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.company_item > a {
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.company_item > span {
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.right_align {
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  right: 0px;
+}
+
+/*info 영역*/
+.foot_info {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  height: 134px;
+}
+
+.foot_info_container {
+  margin-top: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.foot_info_container > li {
+  margin-left: 18px;
+  opacity: 0.7;
+}
+
+.foot_info_container > li:first-child {
+  margin-left: 0px;
+}
+
+#emphasize1 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#emphasize2 {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 100%;
+}
