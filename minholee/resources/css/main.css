@@ -1,0 +1,240 @@
+/* ------------------- Main ---------------- */
+.mobile_container {
+  display: none;
+}
+
+.container {
+  width: 1130px;
+  display: grid;
+  grid-template-columns: auto 350px;
+  margin: 0 auto;
+}
+/* Main Section */
+.section_main {
+  display: grid;
+  grid-template-columns: 750px;
+  gap: 15px;
+  height: 195px;
+}
+.main_ad {
+  width: 750px;
+  height: 135px;
+  background-image: url(../images/ad/main_ad.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* overflow: hidden; */
+}
+.news_stand {
+}
+.news_stand_header {
+  height: 50px;
+  background-color: #f7f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.news_stand_main {
+  height: 300px;
+  padding-top: 15px;
+}
+.news_stand_title {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.news_stand_title span,
+.news_stand_title i {
+  padding-right: 7px;
+}
+.news_stand_icon {
+  width: 35px;
+  padding-right: 5px;
+}
+.news_stand_options,
+.news_stand_list {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+.fa-th-large {
+  color: #164ab9;
+}
+.head_line {
+  font-weight: 400;
+}
+.head_line:hover {
+  text-decoration: underline;
+}
+.naver_news a {
+  color: #3565c9;
+}
+.press_thumb_nail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 230px;
+}
+.thumb_nail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.thumb_nail:hover {
+  cursor: pointer;
+  background-color: #e4e8eb;
+}
+
+.theme_cast {
+  height: 1065px;
+  font-size: 14px;
+}
+.theme_cast_topic {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 50px;
+  align-items: center;
+  text-align: center;
+}
+.theme_cast_title {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.theme_cast_topic div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.job:hover {
+  color: #d8642e;
+}
+.tech {
+  background-color: #486b95;
+  color: #fff;
+}
+.travel:hover {
+  color: #55ccc1;
+}
+.science:hover {
+  color: #225ac6;
+}
+.living:hover {
+  color: #c08d31;
+}
+.health:hover {
+  color: #52ca7e;
+}
+.buisiness:hover {
+  color: #1488cc;
+}
+.hang_out:hover {
+  color: #f2aab4;
+}
+.cast_info {
+  font-size: 13px;
+}
+
+.theme_cast_main {
+  height: 950px;
+  display: grid;
+  grid-template-rows: 220px repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+.theme_cast_main > div {
+  border-bottom: 1px solid #dae1e6;
+}
+.hot_story {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  font-size: 13px;
+}
+.hot_story .story_img:hover img {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.story_title {
+  color: #486b95;
+}
+.story_source {
+  font-size: 12px;
+  color: #505050;
+}
+.story_left {
+  width: 365px;
+  overflow: hidden;
+}
+.story_contents p,
+.story_contents div {
+  padding-top: 6px;
+}
+.story_right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.story_right li {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+.story_right .story_img {
+  width: 100px;
+  height: 96px;
+  overflow: hidden;
+}
+.story_right .story_contents {
+  padding: 5px 10px;
+}
+
+.theme_story_list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.theme_story_list li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+}
+
+.theme_story_list li:hover .theme_story_img {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.theme_story_img {
+  background-image: url(../images/ad/main_ad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.theme_title {
+  color: #000;
+}
+
+.theme_story_contents {
+  font-size: 12px;
+}
+.theme_story_contents div {
+  padding: 5px 0;
+}
+.theme_story_contents p {
+  padding: 3px 0;
+}

@@ -1,0 +1,814 @@
+/*------------------------------------------*/
+/* 기본설정                                   */
+/*------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    font-family: "MalgunGothic", verdana, san-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+}
+
+/*------------------------------------------*/
+/* 재사용 가능 모듈                             */
+/*------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------*/
+/* 헤더                                      */
+/*------------------------------------------*/
+
+header {
+    
+    height: 160px;
+    border-bottom: 1.2px solid #dddddd;
+}
+
+.h-box {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0px 365px;
+    padding: 20px 30px 0px 30px;
+    height: 160px;
+}
+
+/*.search-box {
+    flex: 1; 
+    overflow: auto;
+    margin: 35px 0px;
+    background-color: gray;
+}*/
+
+/*#container {
+    display: block;
+    position: relative;
+}*/
+
+/*.sprite-top-logo {
+    position: absolute;
+    display: block;
+    width: 222px;
+    height: 52px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 44.134%;
+    margin: 5% 0% 0% 65%;
+}*/
+
+/*.header-box {
+    position: absolute;
+    background-color: darkturquoise;
+    height: 160px;
+    top: 10%;
+}*/
+
+.header-logo {
+    width: 222px;
+    height: 52px;
+    margin: 30px 30px 0px 0px;
+}
+
+.header-logo-box {
+    width: 250px;
+    height: 57px;
+    
+}
+
+
+
+/*.search-box {
+    display: flex;
+    margin: 35px 0px;
+}*/
+
+.searchbar {
+    width: 530px;
+    height: 56px;
+    padding: 16px;
+    border-radius: 1px;
+    border: 2px solid #19CE60;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+
+
+.btn-icon {
+    width: 45%;
+    height: 45%;
+}
+
+.search-btn {
+    width: 56px;
+    height: 56px;
+margin-top: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: #19CE60;
+}
+
+.headerend {
+    display: flex;
+    float: left;
+    font-size: 11px;
+    color: #404040;
+    margin: 0px 0px 15px 30px;
+}
+
+.header-arrow {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+}
+
+.headerend a:link,
+.headerend a:visited {
+    text-decoration: none;
+    color: #404040;
+}
+
+.headerend a:hover,
+.headerend a:active {
+    color: #404040;
+    text-decoration: underline;
+}
+
+.header-juniornaver {
+    width: 60px;
+    height: 13px;
+}
+
+.header-happybean {
+    width: 34px;
+    height: 14px;
+}
+
+/*------------------------------------------*/
+/* 내비게이션                                  */
+/*------------------------------------------*/
+
+nav {
+    width: 60%;
+    margin-left: 20%;
+    line-height: 180%;
+}
+
+.main-nav {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.main-nav li {
+    margin-right: 15px;
+    display: inline;
+    font-size: 15px;
+    font-weight: 700;
+    color: #19CE60;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #19CE60;
+}
+
+.email-logo {
+    width: 21px;
+    height: 21px;
+    vertical-align: text-bottom;
+}
+
+.play-logo {
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+}
+
+.side-nav {
+    text-align: left;
+    margin-left: -13px;
+}
+
+.side-nav li {
+    margin-right: 11px;
+    display: inline;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.side-nav li a:link,
+.side-nav li a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-end {
+    text-align: left;
+    margin-left: -22px;
+}
+
+.nav-end li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-end li a:link,
+.nav-end li a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.more {
+    font-size: 13px;
+}
+
+.nav-d-arrow {
+    width: 12px;
+    height: 9px;
+    vertical-align: middle;
+}
+
+.filter {
+    font-size: 12px;
+}
+
+.icon-error{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+
+/*------------------------------------------*/
+/* 섹션                                      */
+/*------------------------------------------*/
+
+.section-line {
+    border-top: 1.2px solid #dddddd;
+}
+
+.all-section {
+    display: block;
+}
+
+.section-description {
+    display: inline-flex;
+    margin: 0px 365px;
+    padding: 20px 30px 0px 30px;
+}
+
+#login-container {
+    display: block;
+    position: relative;
+}
+
+
+
+/* 메인 섹션 */
+
+.main-section {
+    display: block;
+    width: 750px;
+}
+
+.main-ad {
+    width: 750px;
+    height: 135px;
+}
+
+.news-box {
+    width: 750px;
+    height: 49px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    font-size: 13.5px;
+    padding: 15px 15px 10px 15px;
+    color: #202020;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/*.news-info {
+    text-align: left;
+    margin-left: -13px;
+}*/
+
+.news-info li {
+    margin-right: 11px;
+    display: inline;
+    font-weight: 700;
+}
+
+.news-info li a:link,
+.news-info li a:visited {
+    text-decoration: none;
+    color: #202020;
+}
+
+.news-arrow {
+    position: absolute;
+    display: inline-flex;
+    width: 7px;
+    height: 11px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 60.369% 31.25%;
+    margin: 4px 0px 0px -10px;
+}
+
+.news-text {
+    font-size: 13.5px;
+    color: #202020;
+    font-weight: 100;
+    margin: 10px 0px 0px -6px;
+}
+
+.news-text:link,
+.news-text:visited {
+    text-decoration: underline;
+    color: #404040;
+}
+
+.news-text:hover,
+.news-text:active {
+    color: #404040;
+    text-decoration: underline;
+}
+
+.news-info-snd {
+    float: right;
+    margin-left: 0px;
+}
+
+.naver-news {
+    color: #3565c9;
+}
+
+
+
+/*------------------------------------------*/
+/* 2nd 섹션                                  */
+/*------------------------------------------*/
+
+
+
+/* 뉴스 스탠드 섹션 */
+
+
+
+.newsstand-list {
+    margin: 9px 30px;
+
+}
+.newsstand-list li {
+    margin: 0px 5px 0px 0px;
+    display: inline;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.newsstand-list li a:link,
+.newsstand-list li a:visited {
+    text-decoration: none;
+    color: #202020;
+}
+
+
+.newsstand-logo {
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 24px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 55.139% 76.585%;
+    margin: 6px 0px 0px 0px;
+}
+
+.newsstand-arrow {
+    position: absolute;
+    display: inline-flex;
+    width: 9px;
+    height: 13px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 60.369% 31.25%;
+    margin: 5px 0px 0px -7px;
+}
+
+.subscribed-press{
+    font-weight: 200;
+}
+
+.stand-list-icon {
+   /*margin: 0px 0px 0px 270px;*/
+   float: right;
+   padding-right: 20px;
+}
+
+.stand-list-icon li {
+    margin: 0px 12px 0px 15px;
+    display: inline-flex;
+}
+
+.stnd-frst-logo {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 13px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 98.592% 95.466%;
+    margin: 0px 0px 0px 0px;
+    float: right;
+}
+
+.stnd-scnd-logo {
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 32.319% 82.368%;
+    margin: 0px 0px 0px 0px;
+}
+
+.stnd-thrd-logo {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 98.824% 69.873%;
+    margin: -1px 0px 0px 0px;
+}
+
+table {
+    border: 1px solid #dae1e6;
+    border-collapse: collapse;
+}
+
+#nstand-table {
+    width: 751px;
+    height: 261px;
+    
+}
+#nstand-table td {
+    width: 125px;
+    height: 65px;
+    border: 1px solid #dae1e6;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+/*------------------------------------------*/
+/* 메거진 섹션                                 */
+/*------------------------------------------*/
+
+.magazine {
+    margin: 20px 0px;
+}
+
+.m-text-box {
+    font-size: 12px;
+    color: #808080;
+    margin-bottom: -10px;
+}
+
+.mtext-frst {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    margin-right: 7px;
+}
+
+.m-number {
+    color: #000000;
+    font-weight: 700;
+}
+
+.mbox-scnd {
+    float: right;
+}
+
+#magaz-table {
+    width: 750px;
+    height: 50px;
+}
+
+#magaz-table td {
+    width: 95px;
+    height: 50px;
+    border: 1px solid #dae1e6;
+
+    text-align: center;
+    font-size: 13px;
+    line-height: 49px;
+    font-weight: 700;
+}
+
+.magaz-article {
+    display: inline-flex;
+
+}
+
+.frst-pic {
+    margin: 20px 0px;
+}
+
+.f-a-text {
+    margin: 20px 20px;
+    font-size: 13px;
+    line-height: 21.5px;
+}
+
+.last-text {
+    font-size: 12px;
+    color: #808080;
+    text-align: right;
+    border-bottom: 1px solid #dae1e6;
+    padding-bottom: 20px;
+}
+
+.new-txt-more {
+    color: #505050;
+    font-size: 12px;
+    text-align: center;
+    width: 750px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.txt-more-img {
+    position: absolute;
+    display: relative;
+    width: 42px;
+    height: 42px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 92.935%;
+    margin: -50px 0px 0px 25px;
+
+}
+
+/*------------------------------------------*/
+/* 어사이드 섹션                               */
+/*------------------------------------------*/
+
+/* 광고 섹션 */
+.login-box {
+    margin: 0px 30px;
+    width: 350px;
+    height: 135px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    font-size: 12px;
+    padding: 16px 16px 12px 17px;
+    color: #404040;
+}
+
+.login-text {
+    color: #808080;
+}
+
+.login-btn {
+    width: 315px;
+    height: 48px;
+    margin: 12px 0px;
+    padding: 5px 0px 0px 50px; 
+    border: none;
+    background-color: #19CE60;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-N-logo {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 12px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 55% 67.001%;
+    margin: 1px 0px 0px 50px ;
+}
+
+.login-lock-logo {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 14px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 94.884% 13.889%;
+    margin: 0px auto;
+}
+
+.id-pw {
+    padding-left: 13px;
+}
+
+.sign-up {
+    margin-left: 120px;
+}
+
+.sign-up-logo {
+    position: absolute;
+    display: inline-flex;
+    width: 11px;
+    height: 11px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 74.272% 77.096%;
+    margin: 3px 0px 0px 105px;
+}
+
+.exchange-rate {
+    width: 350px;
+    height: 49px;
+    border: 1px solid #dae1e6;
+    margin: 10px 30px;
+    font-size: 12px;
+    padding: 11px 0px 10px 15px;
+}
+
+.rate-number {
+    color: #2586ee;
+    margin-left: 5px;
+    font-weight: 200;
+}
+
+.number-rate {
+    font-weight: 700;
+}
+
+.exchange-btn {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #e4e8eb;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.btn-box {
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0px 0px 6px 17px;
+}
+
+.exArrow-1 {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 9px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 77.1% 73.815%;
+    margin: -4px 0px 0px 7px;
+}
+
+.exArrow-2 {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 9px;
+    background: url("../image/naver-sprite-icon.png");
+    background-repeat: no-repeat;
+    background-position: 75.287% 73.815%;
+    margin: -4px 0px 0px 8px;
+}
+
+
+/* 광고 섹션 */
+.aside-ad {
+    width: 350px;
+    height: 200px;
+    margin: 0px 0px 0px 30px;
+}
+
+aside {
+    width: 350px;
+    display: block;
+}
+
+.shopping {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 15px -30px 15px 30px;
+}
+
+.menu-txt {
+    float: right;
+    word-spacing: 5px;
+    padding: 1px 0px 0px 10px;
+}
+
+.shopping-box {
+    width: 350px;
+    height: 330px;
+    border: 1px solid #dae1e6;
+    margin: 0px 30px;
+}
+
+.click-box {
+    height: 70px;
+    padding: 12px 9px 11px 21px;
+    border-bottom: 1px solid #dae1e6;
+    background-color: #f7f9fa;
+    font-size: 12px;
+    line-height: 23px;
+    color: #202020;
+}
+
+.frst-row {
+    word-spacing: 4px;
+}
+
+.shopping-btn {
+    width: 350px;
+    height: 49px;
+    margin: 0px 0px;
+    font-size: 12px;
+    padding: 15px 13px 0px 0px;
+    text-align: right;
+}
+
+.goods-table {
+    display: inline-flex;
+    padding-left: 4px;
+}
+
+.goods {
+    width: 107;
+    height: 178;
+    font-size: 12px;
+    margin: 5px 3px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.goods-pic {
+    width: 107px;
+    height: 146px;
+    margin: 0px 0px;
+}
+
+.shop-news {
+    height: 130px;
+    border-top: 1px solid #dae1e6;
+}
+
+/*------------------------------------------*/
+/* 푸터                                      */
+/*------------------------------------------*/
+
+footer {
+    background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb;
+}
+
+.fooer-inner {
+
+    padding: 0 30px 92px;
+    margin: 0px 365px;
+
+}
+
+.banner-area {
+    padding: 24px 0;
+    display: inline-flex;
+
+}
+
+.footer-contents {
+    font-size: 12px;
+}
+
+.pic-txt {
+    display: inline-flex;
+    margin-right: 0px;
+
+}
+
+.responsive {
+    display: none;
+}

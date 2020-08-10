@@ -1,0 +1,202 @@
+@media only screen and (max-width: 700px) {
+
+/* 안보이게 해줘야 할 부분 */
+.links{
+    display:none;
+}  
+.search{
+    display:none;
+}
+nav{
+    display:none;
+}
+.container{
+    display: none;
+}
+footer{
+    border-top: none;
+    background-color: #f2f5f7;
+}
+.footer_banner{
+    display: none;
+}
+.footer_notice{
+    display: none;
+}
+.footer_aside{
+    display: none;
+}
+.footer_others{
+    display: none;
+}
+
+
+/* 보여야할 부분 */
+
+/*  header 옵션 */
+
+.m_header{
+    display:inline-block;
+    width:100%;
+}
+.top_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+}
+.top_menu div:first-child{
+    padding-top: 7px;
+}
+
+/* 검색창 옵션*/
+.m_main {
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.m_green_search_box{
+    width: auto;
+    height: 56px;
+    border: 1px solid#77ba29;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    padding:14px 0px 13px 14px;
+}
+input {
+    width: 300px;
+    height: 27px;
+    background: 0;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-right: 40px;
+    border : none;
+    outline: none;
+}
+input::placeholder {
+    color:#eee;
+}
+button {
+    height: 56px;
+    border: none;
+    outline: none;
+    background:0;
+    padding:0;
+    cursor: pointer;
+}
+
+.m_green_search_box img{
+    width: 30px;
+    margin-top: -20%;
+}
+
+/*   nav 옵션    */
+
+.m_nav1, .m_nav2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:20px;
+    cursor: pointer;
+}
+
+.m_nav1 span {
+    padding: 0px 30px ;
+}
+.m_nav2 span {
+    padding: 0px 35px ;
+}
+.m-nav-t{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    padding-top: 5px;
+    color: #676c6f;
+}
+.m-nav-img {
+    width:30px;
+    border-radius: 10px;
+}
+
+/* body 부분 */
+
+.m_body{
+    margin:auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom,#fff,#f2f5f7);
+    overflow: visible;
+
+}
+.m_weather, .m_stock, .m_webtoon{
+    width: 430px;
+    height: 50px;
+    background: #fff;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px;
+}
+.m_naver_app{
+    width: 430px;
+    height: 80px;
+    background: #fff;
+    margin-top: 10px;
+    padding:18px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.m_naver_app span{
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.m_ad {
+    margin-top: 10px;
+}
+.m_pan{
+    width: 430px;
+    height: 150px;
+    background: #fff;
+    margin-top: 10px;
+    padding:18px;
+    margin-bottom: 50px;
+}
+
+.m_pan span {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.m_pan_title{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.m_pan_list{
+    padding-top: 10px;
+}
+
+/* footer 부분 */
+.m_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 300;
+    color: #b7bcc6;
+    padding-top: 5px;
+}
+
+.m_footer_logo{
+    font-size: 17px;
+    font-weight: 900;
+    color:#b7bcc6;
+    padding-top: 20px;
+}

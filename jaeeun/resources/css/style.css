@@ -1,0 +1,629 @@
+/* 기본 설정 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+}
+a {
+    text-decoration: none;
+    color: #404040;
+}
+li {
+    list-style: none;
+}
+
+/* -------------------------------------------- */
+/*                    헤더 옵션                   */
+/* -------------------------------------------- */
+
+header {
+    margin: auto ;
+    width: 100%;
+    /* height: 213px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* 맨위 링크버튼 3개 */
+.links{
+    display:flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    width:1100px;
+    align-items: center;
+}
+
+.link_text {
+    font-size: 11px;
+} 
+.link_home {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.link_jrnaver {
+    width: 60px;
+}
+.link_happybean {
+    width: 35px;
+
+}
+
+.search{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -15%;
+
+}
+
+/* 네이버 로고 */
+.main_logo {
+    width: 222px;
+    height: 52px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+
+}
+
+/* 검색창 */
+.search_box {
+    width: 586px;
+    height: 56px;
+    margin-bottom: 54px;
+    border: 2px solid #19CE60;
+    display: flex;
+    align-items: center;
+}
+.search_box input {
+    width: 530px;
+    height: 24px;
+    margin: 1px;
+    padding: 13px;
+    background-color: #fff;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    border : none;
+    outline: none;
+}
+.search_box button {
+    width: 56px;
+    height: 56px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    background-color: #19CE60;;
+    cursor: pointer;
+}
+.keyboard{
+    width:20px;
+    margin: 6px 0px 0px -10px;
+
+}
+.arrow {
+    width:14px;
+    margin: 10px 10px 5px 10px;
+}
+
+
+/* nav 설정 */
+nav {
+    width:100%;
+    height: 52px;
+    border-top: 1px solid #e0e5e7;
+    border-bottom: 1px solid #e0e5e7;
+}
+.nav_group {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    flex-shrink: 0;
+
+}
+.nav_group ul li{
+    display: inline-block;
+    margin-left: 15px;
+    flex-shrink: 0;
+
+}
+.nav_item li:nth-child(-n + 8) a{
+    color: #19CE60;
+
+}
+.nav_item li:last-child {
+    font-size:13px;
+    font-weight: 1;
+    margin-left:30px;
+}
+.nav_item li a img{
+    vertical-align: middle;
+}
+/* 검색어 필터 */
+.keyword {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 40px;
+    font-weight: 1;
+    color: #505050;
+    letter-spacing: -.5px;
+    margin-top:10px;
+}
+.keyword img{
+    margin-left: 30px;
+    padding:0px;
+    vertical-align :baseline
+}
+.keyword span{
+    margin-top: -3%;
+}
+
+/* -------------------------------------------- */
+/*                    바디 옵션                   */
+/* -------------------------------------------- */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    clear:both;
+    margin:auto;
+    margin-top: 20px;
+    /* min-height: 800px; */
+}
+section{
+    width:750px;
+
+}
+aside{
+    margin-left: 20px;
+    width: 350px;
+}
+
+
+/*   section 옵션   */
+.AD img {
+    width:750px;
+    height:135px;
+    border:none;
+}
+
+.news_stand {
+    width:750px;
+    height:49px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #dae1e6;
+    background-color: #f7f9fa ; 
+    text-align: center;
+    line-height: 50px;
+    font-size:13px;
+    color: #000;
+    margin-top:10px;
+}
+.news_head{
+    padding-left: 10px;
+}
+.news_menu1 {
+    font-weight: 700;
+    color: #3565c9;
+    cursor: pointer;
+}
+.news_menu2{
+    font-weight: 700;
+    cursor: pointer;
+    padding-right: 10px;
+} 
+
+/*뉴스 스탠드 타이틀*/
+.news_media_title {
+    width:750px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 18px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.link_news_media {
+    display:flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.link_news_media a:nth-child(odd){
+    font-weight: 700;
+}
+
+.link_news_media img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.icon_news_media {
+    display:flex;
+    flex-direction: row;
+    padding: 0px 10px 0px 0px;
+    margin-top: 10px;
+}
+.media_list{
+    display:flex;
+    flex-direction: row;
+}
+
+
+/* article 옵션 */
+
+.article_container{
+    padding-top: 30px;
+}
+/* article 타이틀 */
+.article_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.article_title span{
+    font-size:12px;
+    color:#808080;
+}
+.article_title img{
+    vertical-align: middle;
+    margin-left:10px;
+}
+.article_title .article_title_1{
+    font-size: 14px;
+    color:#000;
+}
+/* article 테마 */
+.article_theme ul{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   cursor: pointer;
+}
+.article_theme ul li{
+    font-size:13px;
+    font-weight: 700;
+    width:94px;
+    height:49px;
+    margin-left: -1px;
+    border: 1px solid #dae1e6;
+    text-align: center;
+}
+
+.blank{
+    height: 100%;
+    display:inline-block;
+    vertical-align: middle;
+}
+/* article 본문내용 */
+
+.main_1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+    border-bottom: 1px solid #dae1e6;
+}
+
+.main_2{
+    display:flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dae1e6;
+}
+.main_2_content{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.main_2_text{
+    font-size:13px;
+    margin-left: 20px;
+    line-height: 18px;
+}
+
+.main_3_title{
+    font-size: 14px;
+    padding: 24px 0px 0px 0px;
+}
+.main_3_title_1{
+    font-size: 12px;
+    color:#808080;
+    margin: 1px 0px 0px 8px;
+}
+.movie_list {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 17px 0px 29px 0px;
+    border-bottom: 1px solid #dae1e6; 
+}
+
+.main_3 p{
+    font-size: 13px;
+    color:#202020;
+    font-weight: bold;
+}
+.m_head {
+    font-size: 12px;
+    color:#808080;
+    margin-right: 4px;
+}
+.m_body{
+    font-size: 12px;
+    color: #505050;
+}
+
+.main_4{
+    display:flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dae1e6;
+}
+.main_4_content{
+    display:flex;
+    flex-direction: row;
+    padding: 9px 0px 19px 0px;
+}
+.main_4_text{
+    font-size:13px;
+    margin-left: 20px;
+    line-height: 18px;
+}
+.main_5{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 0px 17px 0px;
+
+}
+
+.main_5_text{
+    padding: 14px 0px 0px 0px;
+}
+.main_5_text1{
+    font-size: 13px;
+    font-weight: bold;
+    color:#202020;
+    line-height: 16px;
+}
+.main_5_text2{
+    font-size: 12px;
+    color:#505050;
+}
+
+ 
+/* ------- aside옵션 -------- */
+
+
+/*네이버 로그인 창*/
+.login_area {
+    width:350px;
+    height: 135px;
+    border: 1px solid #dae1e6;
+    background-color: #f7f9fa;
+}
+.login_msg{
+    font-size:13px;
+    color:#808080;
+    margin:16px 16px 12px 17px;
+}
+
+.login_area a{
+    display:block;
+    width:315px;
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0px;
+    margin-top: 11px;
+    margin:16px 16px 12px 17px;
+}
+.sub_area{
+    font-size: 12px;
+    color: #404040;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -5% 5% 0% 5%;
+}
+
+/* 카드 뉴스 */
+.card_news img{
+    width:350px;
+    height: 49px;
+    margin-top: 15px;
+}
+
+/* 광고 2 */
+.AD_2 img{
+    width:350px;
+    height:200px;
+    margin-top: 10px;
+}
+
+
+/* 쇼핑 */
+
+.shop_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 0px 13px 0px;
+}
+.shop_menu_1 {
+    font-size: 14px;
+    color:#000;
+    margin-left: 5px;
+}
+.shop_menu_2{
+    font-size: 13px;
+    color:#202020 ;
+    font-weight: bold ;
+    margin-right: 10px;
+}
+
+.group_mall{
+    font-size: 12px;
+    color:#202020;
+    padding: 12px 9px 11px 17px;
+    border: 1px solid #dae1e6;
+    background-color: #f7f9fa;
+}
+.mall_name{
+    padding: 2px 0px 2px 0px;
+}
+
+.goods_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 55px 7px 16px 9px;
+    border-left: 1px solid #dae1e6;
+    border-right: 1px solid #dae1e6;
+}
+.goods_1 span{
+    font-size: 12px;
+    line-height: 18px;
+
+}
+.goods_col{
+    padding: 5px 0px 5px 0px;
+}
+
+.goods_2 {
+    border: 1px solid #dae1e6;
+}
+.goods_2 h5{
+    padding: 20px 0px 15px 10px;
+}
+.goods_2_list{
+    display:flex;
+    flex-direction: row;
+    padding: 17px ;
+}
+
+.goods_2 span{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 15px 0px 0px 15px;
+    
+}
+/* -------------------------------------------- */
+/*                 footer 옵션                   */
+/* -------------------------------------------- */
+footer {
+    width: auto;
+    height: 424px;
+    background-color: #fafbfc;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #dae1e6;
+    font-size: 12px;
+    color:#777;
+}
+
+.footer_banner{
+    width:1130px;
+    border-bottom: 1px solid #f1f3f6;
+}
+.banner_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0px;
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px;
+}
+.banner span{
+    padding: 5px 0px 0px 10px;
+}
+.banner p{
+    color:#58c464;
+    font-weight: 700;
+}
+.banner h3{
+    color: #000;
+}
+.footer_notice{
+    width:1130px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid #f1f3f6;
+    padding: 20px 0px;
+}
+.footer_aside {
+    width:1130px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f3f6;
+    padding: 20px 0px;
+}
+
+.partner_1,.partner_2,.partner_3 {
+    padding:5px 0px;
+}
+.p_head{
+    font-weight: 700;
+    color:#000;
+}
+.footer_aside_2,.download, .flower {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.download, .flower {
+    padding: 0px 10px;
+}
+.download span, .flower span{
+    margin-top: 10px;
+}
+
+.footer_others{
+    padding-top: 20px;
+    margin-left: -25%;
+}
+
+/* 여기서부터는 모바일용*/
+.m_header {
+    display: none;
+}
+.m_body{
+    display: none;
+}
+.m_footer{
+    display: none;
+}
+.m_footer_naver{
+    display: none;
+}

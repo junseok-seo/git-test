@@ -1,0 +1,160 @@
+/* ------------------- Header ---------------- */
+.header {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+.header_top {
+  position: relative;
+  width: 1130px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.keyboard_icon {
+  width: 50px;
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 33%;
+}
+.main_logo .naver_logo {
+  width: 222px;
+}
+.naver_logo:hover {
+  opacity: 0.9;
+}
+.search_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 586px;
+  height: 56px;
+  border: 2px solid #19ce60;
+}
+.search_bar {
+  width: 467px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+.search_bar:focus {
+  outline: none;
+}
+.fa-keyboard-o:hover {
+  color: #80868c;
+  cursor: pointer;
+}
+.fa-keyboard-o:hover + .keyboard_icon {
+  display: block;
+}
+.search_btn {
+  width: 55px;
+  height: 55px;
+  background-color: #19ce60;
+  border: none;
+}
+.search_btn:hover {
+  opacity: 0.9;
+  transform: scale(0.97);
+  transition: 0.2s ease-in-out;
+}
+.search_btn:active {
+  outline: none;
+  transform: scale(0.97);
+  transition: 0.2s ease-in-out;
+}
+.search_btn:focus {
+  outline: none;
+}
+.search_btn .fa-search {
+  color: #fff;
+}
+
+.top_anker {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+.top_anker a {
+  padding-right: 10px;
+}
+.set_home_btn {
+  font-size: 11px;
+}
+.top_anker .help_btn {
+  height: 26px;
+}
+.junior_naver_logo,
+.happy_bean_logo {
+  height: 11px;
+}
+.mobile_top_menu {
+  display: none;
+}
+/* Navigation */
+.header_gnb {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #e4e8eb;
+  border-bottom: 1px solid #e4e8eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.gnb_box {
+  width: 1130px;
+  display: flex;
+}
+.mobile_list {
+  display: none;
+}
+.gnb_list {
+  display: flex;
+  max-width: 1130px;
+  width: 900px;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+.gnb_list li:last-child {
+  font-weight: 400;
+  font-size: 13px;
+}
+.gnb_list li {
+  display: flex;
+  align-items: center;
+}
+.gnb_list li:hover {
+  transform: scale(1.12);
+  transition: 0.1s ease-in;
+}
+.mail_icon {
+  width: 13px;
+}
+.tv_icon {
+  width: 12px;
+}
+.keyword_rank {
+  display: flex;
+  width: 230px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  font-size: 13px;
+}
+.ranking {
+  font-weight: 700;
+}
+.keyword {
+  width: 170px;
+}

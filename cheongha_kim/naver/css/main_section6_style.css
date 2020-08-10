@@ -1,0 +1,63 @@
+/* 섹션6 */
+.funding {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  margin-top: 30px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fund_link {
+  height: 60px;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 25px;
+}
+
+.fund_text_box {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: left;
+}
+
+.fund_text_box > h6 {
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.more_reading {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  height: 90px;
+  position: relative;
+}
+
+.more_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  left: 42%;
+  top: -22px;
+  font-size: 14px;
+}
+
+.more_button > i {
+  color: rgba(56, 56, 56, 0.9);
+  align-self: center;
+  padding-top: 15px;
+}
+
+.more_link {
+  width: 150px;
+  height: 20px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: -50px;
+}
