@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naver Clone</title>
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./vendors/css/font-awesome.css" />
+    <link rel="stylesheet" href="./vendors/css/reset.css" />
+    <link rel="shortcut icon" href="./resources/images/favicon/favicon.ico" />
+    <link rel="stylesheet" media="(max-width: 768px)" href="./resources/css/mobile.css" />
+  </head>
+  <body>
+    <div class="wrap" id="home">
+      <header class="header">
+        <div class="header_top">
+          <div class="main_logo">
+            <a href="#"><img class="naver_logo" src="./resources/images/logo/main_logo.png" alt="Naver" /></a>
+          </div>
+          <div class="search_area">
+            <input class="search_bar" type="text" />
+            <i class="fa fa-keyboard-o main_color_font" aria-hidden="true"></i>
+            <img class="keyboard_icon" src="./resources/images/icon/keyboard.png" alt="keyboard" />
+            <i class="fa fa-chevron-down main_color_font" aria-hidden="true"></i>
+            <button class="search_btn"><i class="fa fa-2x fa-search" aria-hidden="true"></i></button>
+          </div>
+          <div class="mobile_top_menu">
+            <a href="#"> <i class="fa fa-2x fa-bars" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-2x fa-user-circle-o" aria-hidden="true"></i></a>
+          </div>
+          <div class="top_anker">
+            <a href="#" class="set_home_btn">네이버를 시작페이지로</a>
+            <a href="#"><img class="help_btn" src="./resources/images/buttons/next_btn.png" alt="Help Center" /></a>
+            <a href="#"><img class="junior_naver_logo" src="./resources/images/logo/junior_naver_logo.png" alt="Junior Naver" /></a>
+            <a href="#"><img class="happy_bean_logo" src="./resources/images/logo/happy_bean_logo.png" alt="Happy Bean" /></a>
+          </div>
+        </div>
+        <nav class="header_gnb">
+          <div class="gnb_box">
+            <ul class="gnb_list">
+              <li>
+                <a href="#" class="main_color_font"><img class="mail_icon" src="./resources/images/icon/nav_mail_icon.png" alt="Mail" /> 메일</a>
+              </li>
+              <li><a href="#" class="main_color_font">카페</a></li>
+              <li><a href="#" class="main_color_font">블로그</a></li>
+              <li><a href="#" class="main_color_font">지식iN</a></li>
+              <li><a href="#" class="main_color_font">쇼핑</a></li>
+              <li><a href="#" class="main_color_font">Pay</a></li>
+              <li>
+                <a href="#" class="main_color_font"><img class="tv_icon" src="./resources/images/icon/nav_tv_icon.png" alt="TV" /> TV</a>
+              </li>
+              <li><a href="#" class="">사전</a></li>
+              <li><a href="#" class="">뉴스</a></li>
+              <li><a href="#" class="">증권</a></li>
+              <li><a href="#" class="">부동산</a></li>
+              <li><a href="#" class="">지도</a></li>
+              <li><a href="#" class="">영화</a></li>
+              <li><a href="#" class="">뮤직</a></li>
+              <li><a href="#" class="">책</a></li>
+              <li><a href="#" class="">웹툰</a></li>
+              <li>
+                <a href="#" class="">더보기 <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+            <ul class="mobile_list">
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-2x fa-newspaper-o" aria-hidden="true"></i>
+                  </div>
+                  <div nav_title>뉴스판</div>
+                </a>
+              </li>
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-2x fa-line-chart" aria-hidden="true"></i>
+                  </div>
+                  <div nav_title>검색차트판</div>
+                </a>
+              </li>
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-2x fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div nav_title>연예판</div>
+                </a>
+              </li>
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-2x fa-heart" aria-hidden="true"></i>
+                  </div>
+                  <div nav_title>트렌트판</div>
+                </a>
+              </li>
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <div nav_title>메일</div>
+                </a>
+              </li>
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-2x fa-coffee" aria-hidden="true"></i>
+                  </div>
+                  <div nav_title>카페</div>
+                </a>
+              </li>
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                  </div>
+                  <div nav_title>블로그</div>
+                </a>
+              </li>
+              <li>
+                <a class="mobile_nav" href="#">
+                  <div nav_icon>
+                    <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="keyword_rank">
+              <div class="ranking main_color_font">1</div>
+              <div class="keyword">구공팩토리</div>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="container">
+        <section class="section_main">
+          <div class="main_ad main_border"></div>
+          <div class="news_stand">
+            <div class="news_stand_header main_border">
+              <div class="news_head_line">
+                <span class="press_name"><a href="#">연합뉴스</a></span>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <span class="head_line"><a href="#">서울 올림픽대로 염창나들목~동작대교 양방향 통제</a></span>
+              </div>
+              <div class="link_area">
+                <span class="naver_news"><a href="#">네이버뉴스</a></span>
+                <span class="dot">▪</span>
+                <span class="entertainments_news"><a href="#">연예</a></span>
+                <span class="sports_news"><a href="#">스포츠</a></span>
+                <span class="economics_news"><a href="#">경제</a></span>
+              </div>
+            </div>
+            <div class="news_stand_main">
+              <div class="news_stand_title">
+                <div class="news_stand_list">
+                  <span
+                    ><a href="#">
+                      <img class="news_stand_icon" src="./resources/images/icon/news_icon.png" alt="News Stand" />
+                    </a>
+                  </span>
+                  <span class="title">뉴스스탠드</span>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  <span>구독한 언론사</span>
+                  <span class="dot">▪</span>
+                  <span class="title">전체언론사</span>
+                </div>
+                <div class="news_stand_options">
+                  <i class="dot fa fa-list-ul" aria-hidden="true"></i>
+                  <i class="fa fa-th-large" aria-hidden="true"></i>
+                  <i class="dot fa fa-cog" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="press_thumb_nail">
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+                <div class="thumb_nail main_border title main_color_font">
+                  NAVER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="theme_cast">
+            <div class="theme_cast_title">
+              <div class="cast_title">
+                <span class="title">오늘 읽을만한 글</span>
+                <span>주제별로 분류된 다양한 글 모음</span>
+              </div>
+              <div class="cast_info">
+                <span class="title"> 2,152</span>
+                <span> 개의 글</span>
+                <i class="fa fa-cog dot" aria-hidden="true"></i>
+                <span> 관심주제 설정</span>
+              </div>
+            </div>
+            <div class="theme_cast_topic">
+              <div class="main_border job">JOB&</div>
+              <div class="main_border tech">테크</div>
+              <div class="main_border travel">여행+</div>
+              <div class="main_border science">게임</div>
+              <div class="main_border living">리빙</div>
+              <div class="main_border health">건강</div>
+              <div class="main_border buisiness">비즈니스</div>
+              <div class="main_border hang_out">연애▪결혼</div>
+            </div>
+            <div class="theme_cast_main">
+              <div class="hot_story">
+                <div class="story_left">
+                  <div class="story_img">
+                    <img src="./resources/images/ad/main_ad.png" alt="" />
+                  </div>
+                  <div class="story_contents">
+                    <div class="title story_title">스마트 모빌리티</div>
+                    <p class="title">中 최대 부동산 재벌 헝다, 전기차 모델 6종 공개</p>
+                    <p>中 최대 부동산 재벌 헝다, 전기차 모델 6종 공개 중국 최대 부동산 재벌로 불리는 에버그란데(헝다 그룹)가 전기차 모...</p>
+                  </div>
+                </div>
+                <ul class="story_right">
+                  <li>
+                    <div class="story_img">
+                      <img src="./resources/images/ad/goods_01.png" alt="goods" />
+                    </div>
+                    <div class="story_contents">
+                      <div class="title story_title">김학퀴즈</div>
+                      <p class="title">에디터, PD가 테크 시험을 풀어본다면? 에디터, PD가 테크 시험을 풀어본다면?</p>
+                      <p class="story_source">테크플러스TV</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="story_img">
+                      <img src="./resources/images/ad/goods_01.png" alt="goods" />
+                    </div>
+                    <div class="story_contents">
+                      <div class="title story_title">디바이스 탐구생활</div>
+                      <p class="title">원하는 대로 만드는 Wifi~ 링크시스 공유기 설치기</p>
+                      <p class="story_source">테크플러스TV</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="theme_story">
+                <ul class="theme_story_list">
+                  <li>
+                    <div class="theme_story_img"></div>
+                    <div class="theme_story_contents">
+                      <div class="title story_title">책문화</div>
+                      <p class="title">남들보다 항상 손해 보는 사람에게 필요한 것</p>
+                      <p class="story_source">
+                        무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="theme_story_img"></div>
+                    <div class="theme_story_contents">
+                      <div class="title story_title">책문화</div>
+                      <p class="title">남들보다 항상 손해 보는 사람에게 필요한 것</p>
+                      <p class="story_source">
+                        무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="theme_story_img"></div>
+                    <div class="theme_story_contents">
+                      <div class="title story_title">책문화</div>
+                      <p class="title">남들보다 항상 손해 보는 사람에게 필요한 것</p>
+                      <p class="story_source">
+                        무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="theme_story">
+                <ul class="theme_story_list">
+                  <li>
+                    <div class="theme_story_img"></div>
+                    <div class="theme_story_contents">
+                      <div class="title story_title">책문화</div>
+                      <p class="title">남들보다 항상 손해 보는 사람에게 필요한 것</p>
+                      <p class="story_source">
+                        무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="theme_story_img"></div>
+                    <div class="theme_story_contents">
+                      <div class="title story_title">책문화</div>
+                      <p class="title">남들보다 항상 손해 보는 사람에게 필요한 것</p>
+                      <p class="story_source">
+                        무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="theme_story_img"></div>
+                    <div class="theme_story_contents">
+                      <div class="title story_title">책문화</div>
+                      <p class="title">남들보다 항상 손해 보는 사람에게 필요한 것</p>
+                      <p class="story_source">
+                        무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신 편입니다."무너진 마음을 일으키는 심리학 주문 "저는 무조건 당신
+                        편입니다."
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside class="side_bar">
+          <div class="account_login main_border">
+            <span class="login_message">네이버를 더 안전하고 편리하게 이용하세요</span>
+            <button class="login_btn"><img src="./resources/images/logo/login_logo.png" alt="Account Login" /> 로그인</button>
+            <div class="login_options">
+              <div class="find_area">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <span class="find_id">아이디</span>
+                <span class="dot">▪</span>
+                <span class="find_id">비밀번호찾기</span>
+              </div>
+              <div class="sign_up_area">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="sign_up">회원가입</span>
+              </div>
+            </div>
+          </div>
+          <div class="card_news main_border">
+            <div class="currency">
+              <span class="currency_info">환율</span>
+              <span class="vertical_bar">|</span>
+              <div class="us">
+                <img class="us_flag" src="./resources/images/aside/us_currency.png" alt="us" />
+                <span class="usd">USD</span>
+              </div>
+              <span class="won">1,188.00</span>
+              <span class="point">🔽 6.50 -0.54%</span>
+            </div>
+            <div class="switch_btn">
+              <div class="left_btn main_border"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+              <div class="right_btn main_border"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="side_ad main_border"></div>
+          <div class="shop_container">
+            <div class="shop_header">
+              <span class="shopping"><a href="#">쇼핑</a></span>
+              <div class="link_area">
+                <span><a href="#" class="product">상품</a></span>
+                <span><a href="#" class="mall">쇼핑몰</a></span>
+                <span><a href="#" class="mens">MEN</a></span>
+              </div>
+            </div>
+            <div class="mall_area main_border">
+              <ul class="mall_list">
+                <li><a href="#">G마켓</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">옥션</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">11번가</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">위메프</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">티몬</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">이마트몰</a></li>
+              </ul>
+              <ul class="mall_list">
+                <li><a href="#">신세계몰</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">올리브영</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">GS샵</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">롯데몰</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">CJmall</a></li>
+                <li><span class="dot">▪</span></li>
+                <li><a href="#">하프클럽</a></li>
+              </ul>
+            </div>
+            <div class="mall_main main_border">
+              <div class="main_top">
+                <div class="page_number">
+                  <span class="current_page">7</span>
+                  <span class="all_page">/ 19</span>
+                </div>
+                <div class="switch_btn">
+                  <div class="left_btn main_border"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                  <div class="right_btn main_border"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                </div>
+              </div>
+              <div class="main_grid">
+                <div class="goods_area">
+                  <div class="goods_img">
+                    <img src="./resources/images/ad/goods_01.png" alt="goods" />
+                  </div>
+                  <div class="goods_title">
+                    <span>이렇게 편했어!</span>
+                    <span>감성부터 달라~</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_02.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>진짜? 1만원대?</span>
+                    <span>장마시작~준비해</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_03.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>금값 걱정 NO</span>
+                    <span>최대 65% SALE</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_01.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>이렇게 편했어!</span>
+                    <span>감성부터 달라~</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_02.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>진짜? 1만원대?</span>
+                    <span>장마시작~준비해</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_03.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>금값 걱정 NO</span>
+                    <span>최대 65% SALE</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_01.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>이렇게 편했어!</span>
+                    <span>감성부터 달라~</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_02.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>진짜? 1만원대?</span>
+                    <span>장마시작~준비해</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_03.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>금값 걱정 NO</span>
+                    <span>최대 65% SALE</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_01.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>이렇게 편했어!</span>
+                    <span>감성부터 달라~</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_02.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>진짜? 1만원대?</span>
+                    <span>장마시작~준비해</span>
+                  </div>
+                </div>
+                <div class="goods_area">
+                  <img src="./resources/images/ad/goods_03.png" alt="goods" />
+                  <div class="goods_title">
+                    <span>금값 걱정 NO</span>
+                    <span>최대 65% SALE</span>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom_page switch_btn">
+                <div class="left_btn main_border"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                <div class="page_number">
+                  <span class="current_page">7</span>
+                  <span class="all_page">/ 19</span>
+                </div>
+                <div class="right_btn main_border"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div class="shop_news main_border">
+              <div class="shop_news_title">
+                <div class="news_title">
+                  <span class="title">반갑다! 쇼핑뉴스</span>
+                </div>
+                <div class="main_top">
+                  <div class="page_number">
+                    <span class="current_page">7</span>
+                    <span class="all_page">/ 19</span>
+                  </div>
+                  <div class="switch_btn">
+                    <div class="left_btn main_border"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                    <div class="right_btn main_border"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                  </div>
+                </div>
+              </div>
+              <ul class="shop_news_list">
+                <li>
+                  <a href="#">
+                    <span class="main_color_font">▪</span>
+                    <span class="title">데일리룩</span>
+                    <span>오래 꺼내입는옷 TIME 세일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="main_color_font">▪</span>
+                    <span class="title">나인</span>
+                    <span>매일~신상10%⬇ 입어보면달라요!</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="main_color_font">▪</span>
+                    <span class="title">뽄뿌</span>
+                    <span>요즘 가장 핫한~ 인기 폰케이스</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <div class="mobile_container">
+        <div class="mobile_ad"></div>
+        <div class="mobile_weather">
+          <div class="mobile_title">
+            <div class="title_left">
+              <span class="title">날씨</span>
+              <span class="mobile_info">내 위치 찾기<i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+            </div>
+            <div class="title_btn">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="mobile_contents">
+            <p class="mobile_info">위치 찾기를 눌러 현 위치의 시간대별▪주간</p>
+            <p class="mobile_info">날씨와 미세먼지 예보를 여기에서 바로 보세요</p>
+          </div>
+        </div>
+        <div class="mobile_stock">
+          <div class="mobile_title">
+            <div class="title_left">
+              <span class="title">증권</span>
+            </div>
+            <div class="title_btn">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mobile_webtoon">
+          <div class="mobile_title">
+            <div class="title_left">
+              <span class="title">웹툰</span>
+            </div>
+            <div class="title_btn">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mobile_sub_ad"></div>
+      </div>
+      <footer class="footer">
+        <div class="footer_container">
+          <div class="banner_area">
+            <div class="split_banner">
+              <div class="banner_img">
+                <img src="./resources/images/ad/footer_ad.jpg" alt="Banner" />
+              </div>
+              <div class="banner_contents">
+                <h3 class="title main_color_font">해외취업 화상면접 주간</h3>
+                <span class="title">해외취업은 KOTRA!</span>
+                <span>해외 인사담당자를</span>
+                <span>온라인으로 만나보세요!</span>
+              </div>
+            </div>
+            <div class="split_banner">
+              <div class="banner_img">
+                <img src="./resources/images/ad/footer_ad.jpg" alt="Banner" />
+              </div>
+              <div class="banner_contents">
+                <h3 class="title main_color_font">해외취업 화상면접 주간</h3>
+                <span class="title">해외취업은 KOTRA!</span>
+                <span>해외 인사담당자를</span>
+                <span>온라인으로 만나보세요!</span>
+              </div>
+            </div>
+            <div class="split_banner">
+              <div class="banner_img">
+                <img src="./resources/images/ad/footer_ad.jpg" alt="Banner" />
+              </div>
+              <div class="banner_contents">
+                <h3 class="title main_color_font">해외취업 화상면접 주간</h3>
+                <span class="title">해외취업은 KOTRA!</span>
+                <span>해외 인사담당자를</span>
+                <span>온라인으로 만나보세요!</span>
+              </div>
+            </div>
+          </div>
+          <div class="notice_area footer_border">
+            <span class="title"><a href="#"> 공지사항</a></span>
+            <span class="message"><a href="#"> 네이버페이 DB 점검으로 인한 서비스 중단 안내</a></span>
+          </div>
+          <div class="partners footer_border">
+            <div class="partners_area">
+              <div class="partners_title">
+                <div class="title">Creators</div>
+                <ul class="link_list">
+                  <li><a href="#">크리에이터</a></li>
+                  <li><a href="#">스몰비즈니스</a></li>
+                </ul>
+              </div>
+              <div class="partners_title">
+                <div class="title">Partners</div>
+                <ul class="link_list">
+                  <li><a href="#">비즈니스 ▪ 광고</a></li>
+                  <li><a href="#">스토어 개설</a></li>
+                  <li><a href="#">지역업체 등록</a></li>
+                </ul>
+              </div>
+              <div class="partners_title">
+                <div class="title">Developers</div>
+                <ul class="link_list">
+                  <li><a href="#">네이버 개발자 센터</a></li>
+                  <li><a href="#">오픈 API</a></li>
+                  <li><a href="#">오픈소스</a></li>
+                  <li><a href="#">네이버 D2</a></li>
+                  <li><a href="#">네이버 D2SF</a></li>
+                  <li><a href="#">네이버 랩스</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="project_area">
+              <div class="whale">
+                <div class="project_title">
+                  <span class="title">웨일 브라우저</span>
+                  <span class="grey_font"><a href="#"> 다운받기</a></span>
+                </div>
+                <a href="#"> <img src="./resources/images/icon/whale_icon.png" alt="Naver Whale" /></a>
+              </div>
+              <div class="flower">
+                <div class="project_title">
+                  <span class="title">프로젝트 꽃</span>
+                  <span class="grey_font"><a href="#"> 바로가기</a></span>
+                </div>
+                <a href="#"><img src="./resources/images/icon/project_icon.png" alt="Flower Project" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="corp_area">
+            <ul class="footer_list">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">제휴제안</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">청소년보호정책</a></li>
+              <li><a href="#">네이버 정책</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#" class="title">&copy; NAVER Corp.</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile_footer">
+          <ul class="mobile_footer_nav">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">전체서비스</a></li>
+            <li><a href="#">PC버전</a></li>
+          </ul>
+          <ul class="mobile_footer_nav">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#" class="title">개인정보처리방침</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+          <div class="mobile_footer_logo">
+            <img src="./resources/images/logo/moblie_logo.png" alt="Naver" />
+          </div>
+        </div>
+      </footer>
+      <div class="fixed_btn">
+        <div class="dark_mode_btn">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+          <span> 다크 모드로 보기</span>
+        </div>
+        <div class="go_to_home_btn">
+          <a href="#home">
+            <i class="fa fa-2x fa-level-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
